@@ -118,9 +118,9 @@ const Home: NextPage = () => {
         <OpenSourceProjects />
       </main>
 
-      <footer className={"mt-64 bg-gray-800 px-4 pt-28 pb-16 text-gray-300"}>
+      <footer className={"mt-64 bg-gray-800 px-4 pt-28 pb-28 text-gray-300"}>
         <NavBar />
-        <div className={"mb-12 flex justify-center gap-16"}>
+        <div className={"flex justify-center gap-16"}>
           <Link href={"https://github.com/druage"}>
             <a target={"_blank"} className="">
               <FontAwesomeIcon icon={faGithub} height={24} width={24} />
@@ -137,6 +137,9 @@ const Home: NextPage = () => {
             </a>
           </Link>
         </div>
+        <p className="mt-12 text-center text-base text-gray-400">
+          &copy; 2022 Lee Lazarecky. All rights reserved.
+        </p>
       </footer>
     </div>
   );
