@@ -91,7 +91,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className={"mx-auto w-1/2 py-8"}>
+        <div className={"mx-auto py-8 sm:w-full md:w-[40rem]"}>
           <p>
             I am a Full-Stack Software Developer based in Ann Arbor, MI. I love
             creating software and being able to make it useful to people. I just
