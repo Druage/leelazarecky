@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             height="200"
             width="200"
             alt="portfolio-profile-image"
-            className="rounded-3xl border-2 bg-gray-800"
+            className="w-[400px] rounded-3xl border-2 bg-gray-800"
             objectFit="cover"
           />
           <div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className={"mx-auto mb-12 flex w-1/2 items-center justify-between"}>
+    <div className={"mb-12 flex items-center justify-center gap-12"}>
       <Link href={"#about"}>
         <a className={"hover:underline"}>About</a>
       </Link>
