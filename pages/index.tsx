@@ -94,22 +94,21 @@ const Home: NextPage = () => {
         <div className={"mx-auto py-8 sm:w-full md:w-[40rem]"}>
           <p>
             I am a Full-Stack Software Developer based in Ann Arbor, MI. I love
-            creating software and being able to make it useful to people. I just
-            love learning everything new.
+            creating software and being able to make it useful to people; I just
+            love learning everything new!
           </p>
 
           <br />
 
           <p>
             Besides programming I also dabble in UI design for my own projects
-            and projects of others that need help, I think it stems from a
-            passion of drawing.
+            and projects of others that need help.
           </p>
 
           <br />
           <p>
             My hobbies include drawing, music, travelling to all places new,
-            history podcasts, and audiobooks!
+            history podcasts, and audiobooks! ᕕ( ᐛ )ᕗ
           </p>
         </div>
       </header>
