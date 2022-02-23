@@ -10,7 +10,7 @@ const projects = [
   },
 ];
 
-export function OpenSourceProjects() {
+export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"}>
       <h1 className={"text-4xl"}>Open Source Projects</h1>

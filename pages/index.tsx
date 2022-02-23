@@ -3,8 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import OpenSourceProjects from "./components/OpenSourceProjects";
+
 import styles from "../styles/Home.module.css";
-import { OpenSourceProjects } from "./components/OpenSourceProjects";
 
 const Home: NextPage = () => {
   return (
