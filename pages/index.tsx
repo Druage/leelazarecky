@@ -14,14 +14,14 @@ import NavBar from "./components/NavBar";
 
 const Home: NextPage = () => {
   return (
-    <div id={"about"} className={"px-4 pt-8 pb-16"}>
+    <div id={"about"} className={"pt-8"}>
       <Head>
         <title>Lee Lazarecky</title>
         <meta name="description" content="A portfolio for Lee Lazarecky" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <header className={"py-12"}>
+      <header className={"px-4 py-12"}>
         <NavBar />
 
         <div className="flex justify-center gap-12 align-middle">
@@ -114,12 +114,29 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <main className={"mx-auto w-4/5 border-t-2 border-gray-200 py-8"}>
+      <main className={"mx-auto w-4/5 border-t-2 border-gray-200 px-4 py-8"}>
         <OpenSourceProjects />
       </main>
 
-      <footer className={"mt-64"}>
+      <footer className={"mt-64 bg-gray-800 px-4 pt-28 pb-16 text-gray-300"}>
         <NavBar />
+        <div className={"mb-12 flex justify-center gap-16"}>
+          <Link href={"https://github.com/druage"}>
+            <a target={"_blank"} className="">
+              <FontAwesomeIcon icon={faGithub} height={24} width={24} />
+            </a>
+          </Link>
+          <Link href={"https://www.instagram.com/leelazarecky/?hl=en"}>
+            <a target={"_blank"} className="">
+              <FontAwesomeIcon icon={faInstagram} height={24} width={24} />
+            </a>
+          </Link>
+          <Link href={"https://www.linkedin.com/in/lee-lazarecky-2a588310b/"}>
+            <a target={"_blank"} className="">
+              <FontAwesomeIcon icon={faLinkedin} height={24} width={24} />
+            </a>
+          </Link>
+        </div>
       </footer>
     </div>
   );
