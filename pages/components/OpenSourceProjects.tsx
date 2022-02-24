@@ -71,15 +71,15 @@ const projects: Project[] = [
 export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"}>
-      <div className={"py-12 text-4xl font-bold md:text-8xl"}>
+      <div className={"py-3 text-4xl font-bold md:py-12 md:text-8xl"}>
         <h1>Open Source</h1>
-        <h1 className={"text-6xl font-black md:text-9xl"}>Projects</h1>
+        <h1 className={"text-7xl font-black md:text-9xl"}>Projects</h1>
 
         <Link href={"https://github.com/druage"}>
           <a target={"_blank"}>
             <button
               type="button"
-              className="inline-flex items-center rounded-md border border-transparent bg-zinc-600 px-10  py-3 text-lg text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2"
+              className="mt-12 inline-flex items-center rounded-md border border-transparent bg-zinc-600 px-10 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -96,7 +96,7 @@ export default function OpenSourceProjects() {
       <div className={"mt-8 flex flex-col gap-12"}>
         {projects.map((it) => (
           <div key={it.name} className={"w-full"}>
-            <h1 className={"py-8 text-5xl font-normal md:text-7xl"}>
+            <h1 className={"py-8 text-4xl font-normal md:text-7xl"}>
               {it.name}
             </h1>
             <div>{it.githubLink}</div>

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <header className={"px-4 py-12"}>
+      <header className={"py-12 px-4"}>
         <NavBar />
 
         <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row">
@@ -117,7 +117,11 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <main className={"mx-auto w-4/5 border-t-2 border-gray-200 px-4 py-8"}>
+      <main
+        className={
+          "mx-auto w-full border-t-2 border-gray-200 py-8 px-4 md:w-4/5"
+        }
+      >
         <OpenSourceProjects />
       </main>
 
