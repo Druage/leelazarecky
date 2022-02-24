@@ -96,7 +96,9 @@ export default function OpenSourceProjects() {
       <div className={"mt-8 flex flex-col gap-12"}>
         {projects.map((it) => (
           <div key={it.name} className={"w-full"}>
-            <h1 className={"py-8 text-7xl font-normal"}>{it.name}</h1>
+            <h1 className={"py-8 text-5xl font-normal md:text-7xl"}>
+              {it.name}
+            </h1>
             <div>{it.githubLink}</div>
             <div className={"text-2xl"}>{it.description}</div>
             {/*<Image*/}
