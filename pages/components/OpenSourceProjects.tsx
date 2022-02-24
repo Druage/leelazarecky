@@ -93,14 +93,14 @@ export default function OpenSourceProjects() {
         </Link>
       </div>
 
-      <div className={"mt-8 flex flex-col gap-12"}>
+      <div className={"mt-2 flex flex-col gap-12 md:mt-8"}>
         {projects.map((it) => (
           <div key={it.name} className={"w-full"}>
             <h1 className={"py-8 text-4xl font-normal md:text-7xl"}>
               {it.name}
             </h1>
             <div>{it.githubLink}</div>
-            <div className={"text-2xl"}>{it.description}</div>
+            <div className={"text-1xl md:text-2xl"}>{it.description}</div>
             {/*<Image*/}
             {/*  src={it.image.src}*/}
             {/*  height={it.image.height}*/}
