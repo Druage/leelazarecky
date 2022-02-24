@@ -71,9 +71,9 @@ const projects: Project[] = [
 export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"}>
-      <div className={"py-12 text-8xl font-bold"}>
+      <div className={"py-12 text-4xl font-bold md:text-8xl"}>
         <h1>Open Source</h1>
-        <h1 className={"text-9xl font-black"}>Projects</h1>
+        <h1 className={"text-6xl font-black md:text-9xl"}>Projects</h1>
 
         <Link href={"https://github.com/druage"}>
           <a target={"_blank"}>

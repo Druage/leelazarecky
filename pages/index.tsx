@@ -24,15 +24,19 @@ const Home: NextPage = () => {
       <header className={"px-4 py-12"}>
         <NavBar />
 
-        <div className="flex justify-center gap-12 align-middle">
-          <Image
-            src={"/profile_image.jpeg"}
-            height="200"
-            width="200"
-            alt="portfolio-profile-image"
-            className="w-[400px] rounded-3xl border-2 bg-gray-800"
-            objectFit="cover"
-          />
+        <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row">
+          <div
+            className={"relative h-[200px] w-[200px] rounded-3xl bg-gray-800"}
+          >
+            <Image
+              src={"/profile_image.jpeg"}
+              alt="portfolio-profile-image"
+              objectFit="cover"
+              className={"rounded-3xl"}
+              layout={"fill"}
+            />
+          </div>
+
           <div>
             <h1 className={"mb-4 block text-6xl font-bold"}>Lee Lazarecky</h1>
             <h2 className={"block text-2xl"}>Daytime Software Developer</h2>
