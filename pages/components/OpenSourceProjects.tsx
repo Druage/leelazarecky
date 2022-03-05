@@ -71,32 +71,36 @@ const projects: Project[] = [
 export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"}>
-      <div className={"py-3 text-4xl font-bold md:py-12 md:text-8xl"}>
-        <h1>Open Source</h1>
-        <h1 className={"text-7xl font-black md:text-9xl"}>Projects</h1>
-
-        <Link href={"https://github.com/druage"}>
-          <a target={"_blank"}>
-            <button
-              type="button"
-              className="mt-12 inline-flex items-center rounded-md border border-transparent bg-zinc-600 px-10 py-3 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                height={24}
-                width={24}
-                className={"mr-2"}
-              />
-              View GitHub Account
-            </button>
-          </a>
-        </Link>
+      <div
+        className={
+          "bg-gray-900 py-3 text-center text-4xl font-bold text-white md:py-12 md:text-7xl"
+        }
+      >
+        <div className={"m-auto flex w-fit flex-col items-start"}>
+          <h1>Passion Projects</h1>
+          <Link href={"https://github.com/druage"}>
+            <a target={"_blank"}>
+              <button
+                type="button"
+                className="mt-3 inline-flex items-center rounded-md border border-transparent bg-zinc-600 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  height={24}
+                  width={24}
+                  className={"mr-2"}
+                />
+                View GitHub Account
+              </button>
+            </a>
+          </Link>
+        </div>
       </div>
 
-      <div className={"mt-2 flex flex-col gap-12 md:mt-8"}>
+      <div className={"mt-2 grid grid-cols-1 gap-1 md:mt-8"}>
         {projects.map((it) => (
-          <div key={it.name} className={"w-full"}>
-            <h1 className={"py-8 text-4xl font-normal md:text-7xl"}>
+          <div key={it.name} className={"p-4"}>
+            <h1 className={"py-8 text-4xl font-normal md:text-5xl"}>
               {it.name}
             </h1>
             <div>{it.githubLink}</div>
