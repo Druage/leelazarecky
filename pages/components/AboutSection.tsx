@@ -13,8 +13,8 @@ export default function AboutSection() {
     <header className={"py-12 px-4"}>
       <NavBar />
 
-      <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row">
-        <div className={"relative h-[500px] w-[400px] bg-gray-800"}>
+      <div className="flex flex-col items-center justify-center gap-24 align-middle md:flex-row">
+        <div className={"relative h-[500px] w-[400px] rounded-3xl bg-gray-800"}>
           <Image
             src={"/profile_image.jpeg"}
             alt="portfolio-profile-image"
