@@ -14,10 +14,10 @@ export default function AboutSection() {
       <NavBar />
 
       <div className="flex flex-col items-center justify-center gap-24 align-middle md:flex-row">
-        <div className={"relative h-[500px] w-[400px] rounded-3xl bg-gray-800"}>
+        <div className={"relative h-[550px] w-[400px] bg-gray-800"}>
           <Image
             className={"rounded-3xl"}
-            src={"/profile_image.jpeg"}
+            src={"/profile_image.png"}
             alt="portfolio-profile-image"
             objectFit="cover"
             layout={"fill"}
@@ -28,9 +28,13 @@ export default function AboutSection() {
           <h1 className={"mb-4 block text-7xl font-bold"}>Lee Lazarecky</h1>
           <h2 className={"block w-fit bg-black px-3 py-1 text-2xl text-white"}>
             Daytime Software Developer
-          </h2>
-          <h2 className={"block w-fit bg-gray-100 px-3 py-1 text-2xl"}>
-            Moonlight Designer
+            <h2
+              className={
+                "w-fill -mx-3 mt-1 -mb-1 block bg-gray-100 px-3 py-1 text-2xl text-black"
+              }
+            >
+              Moonlight Designer
+            </h2>
           </h2>
 
           <div className={"badgeContainer mt-4 flex justify-items-start gap-4"}>
