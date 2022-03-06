@@ -11,6 +11,7 @@ type Project = {
     height: number;
     width: number;
   };
+  tags: string[];
   githubLink: string;
 };
 
@@ -28,6 +29,7 @@ const projects: Project[] = [
       width: 300,
     },
     githubLink: "",
+    tags: ["Vue.js", "Kotlin", "MySql", "Java", "Spring Boot", "Design"],
   },
   {
     name: "RetroQuest",
@@ -41,6 +43,7 @@ const projects: Project[] = [
       width: 300,
     },
     githubLink: "",
+    tags: ["React.js", "MySQL", "Angular", "Java", "Spring Boot", "Design"],
   },
   {
     name: "Smash ELO Tracker",
@@ -54,6 +57,7 @@ const projects: Project[] = [
       width: 300,
     },
     githubLink: "",
+    tags: ["Java", "Spring Boot", "React.js", "Design"],
   },
   {
     name: "Phoenix",
@@ -66,6 +70,7 @@ const projects: Project[] = [
       width: 300,
     },
     githubLink: "",
+    tags: ["C++", "SQLite", "Emulation", "Qt", "QML", "CMake"],
   },
 ];
 
@@ -98,7 +103,7 @@ export default function OpenSourceProjects() {
       <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
         {projects.map((it) => (
           <div key={it.name} className={"p-4"}>
-            <div className={"grid grid-cols-2 bg-white text-black"}>
+            <div className={"box-sh grid grid-cols-2 bg-white text-black"}>
               <div className={"relative h-[800px] w-full"}>
                 <Image
                   src={it.image.src}
@@ -114,6 +119,16 @@ export default function OpenSourceProjects() {
                 <div>{it.githubLink}</div>
                 <div className={"text-1xl md:text-1xl"}>{it.description}</div>
 
+                <div className={"mt-6"}>
+                  {it.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 <button
                   type="button"
                   className="mt-6 inline-flex items-center rounded-md border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
