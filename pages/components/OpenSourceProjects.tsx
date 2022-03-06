@@ -42,7 +42,7 @@ const projects: Project[] = [
       height: 500,
       width: 300,
     },
-    githubLink: "",
+    githubLink: "https://github.com/fordlabs/retroquest",
     tags: ["React.js", "MySQL", "Angular", "Java", "Spring Boot", "Design"],
   },
   {
@@ -69,7 +69,7 @@ const projects: Project[] = [
       height: 500,
       width: 300,
     },
-    githubLink: "",
+    githubLink: "https://github.com/team-phoenix/Phoenix",
     tags: ["C++", "SQLite", "Emulation", "Qt", "QML", "CMake"],
   },
 ];
@@ -118,7 +118,6 @@ export default function OpenSourceProjects() {
 
               <div className={"border-l border-gray-300 p-12"}>
                 <h1 className={"py-4 text-2xl md:text-3xl"}>{it.name}</h1>
-                <div>{it.githubLink}</div>
                 <div className={"text-1xl md:text-1xl"}>{it.description}</div>
 
                 <div className={"mt-6 flex flex-wrap gap-3"}>
@@ -131,18 +130,23 @@ export default function OpenSourceProjects() {
                     </span>
                   ))}
                 </div>
-                <button
-                  type="button"
-                  className="mt-6 inline-flex items-center border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
-                >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    height={24}
-                    width={24}
-                    className={"mr-2"}
-                  />
-                  View GitHub Account
-                </button>
+                {it.githubLink && it.githubLink !== "" && (
+                  <Link href={it.githubLink}>
+                    <a
+                      type="button"
+                      target={"_blank"}
+                      className="mt-6 inline-flex items-center border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+                    >
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        height={24}
+                        width={24}
+                        className={"mr-2"}
+                      />
+                      View Project on Github
+                    </a>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
