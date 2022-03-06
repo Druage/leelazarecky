@@ -95,28 +95,39 @@ export default function OpenSourceProjects() {
         </div>
       </div>
 
-      <div className={"mt-2 grid grid-cols-3 gap-24 md:mt-8"}>
+      <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
         {projects.map((it) => (
           <div key={it.name} className={"p-4"}>
-            <div className={"relative h-[300px] w-full bg-zinc-900"}>
-              <Image
-                src={it.image.src}
-                alt="project-image"
-                objectFit="contain"
-                layout={"fill"}
-              />
-            </div>
+            <div className={"grid grid-cols-2 bg-white text-black"}>
+              <div className={"relative h-[800px] w-full"}>
+                <Image
+                  src={it.image.src}
+                  alt="project-image"
+                  objectFit="cover"
+                  className={"object-left-top"}
+                  layout={"fill"}
+                />
+              </div>
 
-            <h1 className={"py-4 text-2xl md:text-3xl"}>{it.name}</h1>
-            <div>{it.githubLink}</div>
-            <div className={"text-1xl md:text-1xl"}>{it.description}</div>
-            {/*<Image*/}
-            {/*  src={it.image.src}*/}
-            {/*  height={it.image.height}*/}
-            {/*  width={it.image.width}*/}
-            {/*  alt="project-image"*/}
-            {/*  objectFit="cover"*/}
-            {/*/>*/}
+              <div className={"border-l border-gray-300 p-12"}>
+                <h1 className={"py-4 text-2xl md:text-3xl"}>{it.name}</h1>
+                <div>{it.githubLink}</div>
+                <div className={"text-1xl md:text-1xl"}>{it.description}</div>
+
+                <button
+                  type="button"
+                  className="mt-6 inline-flex items-center rounded-md border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    height={24}
+                    width={24}
+                    className={"mr-2"}
+                  />
+                  View GitHub Account
+                </button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
