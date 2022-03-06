@@ -23,9 +23,7 @@ const Home: NextPage = () => {
       <AboutSection />
 
       <main
-        className={
-          "mt-8 w-full border-t-2 border-gray-200 bg-zinc-900 text-white"
-        }
+        className={"mt-8 w-full border-t-2 border-gray-200 bg-black text-white"}
       >
         <OpenSourceProjects />
       </main>

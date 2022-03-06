@@ -80,7 +80,9 @@ export default function OpenSourceProjects() {
       <div className={"py-3 text-center text-4xl md:py-12 md:text-7xl"}>
         <div className={"flex w-fit flex-col items-start"}>
           <h1>Passion</h1>
-          <h1 className={"text-[10rem] font-bold"}>Projects</h1>
+          <h1 className={"bg-white text-[10rem] font-bold text-black"}>
+            Projects
+          </h1>
           <Link href={"https://github.com/druage"}>
             <a target={"_blank"}>
               <button
