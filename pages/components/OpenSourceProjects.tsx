@@ -87,7 +87,7 @@ export default function OpenSourceProjects() {
             <a target={"_blank"}>
               <button
                 type="button"
-                className="mt-20 inline-flex items-center rounded-md border border-transparent bg-white px-6 py-2 text-base font-medium text-black shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+                className="mt-20 inline-flex items-center border border-transparent bg-white px-6 py-2 text-base font-medium text-black shadow-sm hover:bg-gray-200 hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -104,7 +104,7 @@ export default function OpenSourceProjects() {
 
       <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
         {projects.map((it) => (
-          <div key={it.name} className={"p-4"}>
+          <div key={it.name}>
             <div className={"box-sh grid grid-cols-2 bg-white text-black"}>
               <div className={"relative h-[800px] w-full"}>
                 <Image
@@ -121,7 +121,7 @@ export default function OpenSourceProjects() {
                 <div>{it.githubLink}</div>
                 <div className={"text-1xl md:text-1xl"}>{it.description}</div>
 
-                <div className={"mt-6"}>
+                <div className={"mt-6 flex flex-wrap gap-3"}>
                   {it.tags.map((tag) => (
                     <span
                       key={tag}
@@ -133,7 +133,7 @@ export default function OpenSourceProjects() {
                 </div>
                 <button
                   type="button"
-                  className="mt-6 inline-flex items-center rounded-md border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+                  className="mt-6 inline-flex items-center border border-transparent bg-zinc-700 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
