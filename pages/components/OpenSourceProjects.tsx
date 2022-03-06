@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import Image from "next/image";
 
 type Project = {
   name: string;
@@ -70,19 +71,16 @@ const projects: Project[] = [
 
 export default function OpenSourceProjects() {
   return (
-    <div id={"open-source-projects"}>
-      <div
-        className={
-          "bg-gray-900 py-3 text-center text-4xl font-bold text-white md:py-12 md:text-7xl"
-        }
-      >
-        <div className={"m-auto flex w-fit flex-col items-start"}>
-          <h1>Passion Projects</h1>
+    <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
+      <div className={"py-3 text-center text-4xl md:py-12 md:text-7xl"}>
+        <div className={"flex w-fit flex-col items-start"}>
+          <h1>Passion</h1>
+          <h1 className={"text-[10rem] font-bold"}>Projects</h1>
           <Link href={"https://github.com/druage"}>
             <a target={"_blank"}>
               <button
                 type="button"
-                className="mt-3 inline-flex items-center rounded-md border border-transparent bg-zinc-600 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
+                className="mt-20 inline-flex items-center rounded-md border border-transparent bg-white px-6 py-2 text-base font-medium text-black shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -97,14 +95,21 @@ export default function OpenSourceProjects() {
         </div>
       </div>
 
-      <div className={"mt-2 grid grid-cols-1 gap-1 md:mt-8"}>
+      <div className={"mt-2 grid grid-cols-3 gap-24 md:mt-8"}>
         {projects.map((it) => (
           <div key={it.name} className={"p-4"}>
-            <h1 className={"py-8 text-4xl font-normal md:text-5xl"}>
-              {it.name}
-            </h1>
+            <div className={"relative h-[300px] w-full bg-zinc-900"}>
+              <Image
+                src={it.image.src}
+                alt="project-image"
+                objectFit="contain"
+                layout={"fill"}
+              />
+            </div>
+
+            <h1 className={"py-4 text-2xl md:text-3xl"}>{it.name}</h1>
             <div>{it.githubLink}</div>
-            <div className={"text-1xl md:text-2xl"}>{it.description}</div>
+            <div className={"text-1xl md:text-1xl"}>{it.description}</div>
             {/*<Image*/}
             {/*  src={it.image.src}*/}
             {/*  height={it.image.height}*/}

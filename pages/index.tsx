@@ -24,13 +24,13 @@ const Home: NextPage = () => {
 
       <main
         className={
-          "mx-auto w-full border-t-2 border-gray-200 py-8 px-4 md:w-4/5"
+          "mt-8 w-full border-t-2 border-gray-200 bg-zinc-900 text-white"
         }
       >
         <OpenSourceProjects />
       </main>
 
-      <footer className={"mt-64 bg-gray-800 px-4 pt-28 pb-28 text-gray-300"}>
+      <footer className={"bg-gray-800 px-4 pt-28 pb-28 text-gray-300"}>
         <NavBar />
         <div className={"flex justify-center gap-16"}>
           <Link href={"https://github.com/druage"}>

@@ -16,10 +16,10 @@ export default function AboutSection() {
       <div className="flex flex-col items-center justify-center gap-24 align-middle md:flex-row">
         <div className={"relative h-[500px] w-[400px] rounded-3xl bg-gray-800"}>
           <Image
+            className={"rounded-3xl"}
             src={"/profile_image.jpeg"}
             alt="portfolio-profile-image"
             objectFit="cover"
-            className={"rounded-3xl"}
             layout={"fill"}
           />
         </div>
