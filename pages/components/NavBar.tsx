@@ -11,7 +11,7 @@ export default function NavBar() {
         <a className={"hover:underline"}>About</a>
       </Link>
       <Link href={"#open-source-projects"}>
-        <a className={"hover:underline"}>Open Source Projects</a>
+        <a className={"hover:underline"}>Passion Projects</a>
       </Link>
     </div>
   );
