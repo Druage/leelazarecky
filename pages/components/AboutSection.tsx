@@ -108,7 +108,8 @@ export default function AboutSection() {
             <br />
             <p>
               My hobbies include drawing, music, travelling to all places new,
-              history podcasts, and audiobooks! ᕕ( ᐛ )ᕗ
+              history podcasts, and audiobooks!{" "}
+              <span className={"whitespace-pre"}>ᕕ( ᐛ )ᕗ</span>
             </p>
           </div>
         </div>
