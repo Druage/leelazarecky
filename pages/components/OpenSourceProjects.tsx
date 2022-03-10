@@ -65,7 +65,7 @@ const projects: Project[] = [
       "Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on" +
       " emulated consoles on their computer.",
     image: {
-      src: "/smash_elo_tracker.png",
+      src: "/phx.png",
       height: 500,
       width: 300,
     },
