@@ -109,7 +109,11 @@ export default function OpenSourceProjects() {
       <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
         {projects.map((it) => (
           <div key={it.name}>
-            <div className={"box-sh grid grid-cols-2 bg-white text-black"}>
+            <div
+              className={
+                "box-sh grid grid-cols-1 bg-white text-black md:grid-cols-2"
+              }
+            >
               <div className={"relative h-[800px] w-full"}>
                 <Image
                   src={it.image.src}
