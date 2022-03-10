@@ -77,10 +77,12 @@ const projects: Project[] = [
 export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
-      <div className={"py-3 text-center text-4xl md:py-12 md:text-7xl"}>
+      <div className={"py-3 text-center text-6xl md:py-12 md:text-7xl"}>
         <div className={"flex w-fit flex-col items-start"}>
           <h1>Passion</h1>
-          <h1 className={"bg-white text-[10rem] font-bold text-black"}>
+          <h1
+            className={"bg-white text-8xl font-bold text-black md:text-[10rem]"}
+          >
             Projects
           </h1>
           <Link href={"https://github.com/druage"}>
