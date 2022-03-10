@@ -10,14 +10,8 @@ export default function NavBar() {
       <Link href={"#about"}>
         <a className={"hover:underline"}>About</a>
       </Link>
-      <Link href={"#blog"}>
-        <a className={"hover:underline"}>Blog</a>
-      </Link>
       <Link href={"#open-source-projects"}>
         <a className={"hover:underline"}>Open Source Projects</a>
-      </Link>
-      <Link href={"#contact"}>
-        <a className={"hover:underline"}>Contact</a>
       </Link>
     </div>
   );
