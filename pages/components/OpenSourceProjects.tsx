@@ -77,7 +77,9 @@ const projects: Project[] = [
 export default function OpenSourceProjects() {
   return (
     <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
-      <div className={"py-3 text-center text-6xl md:py-12 md:text-7xl"}>
+      <div
+        className={"py-12 text-center text-6xl md:py-3 md:py-12 md:text-7xl"}
+      >
         <div className={"flex w-fit flex-col items-start"}>
           <h1>Passion</h1>
           <h1
