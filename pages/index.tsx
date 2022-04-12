@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import AboutSection from "./components/sections/AboutSection";
-import OpenSourceProjectsSection from "./components/sections/OpenSourceProjectsSection";
-import FooterSection from "./components/sections/FooterSection";
-import PageHead from "./components/sections/PageHead";
+import AboutSection from "./sections/AboutSection";
+import OpenSourceProjectsSection from "./sections/OpenSourceProjectsSection";
+import FooterSection from "./sections/FooterSection";
+import PageHead from "./sections/PageHead";
 
 const Home: NextPage = () => {
   return (
@@ -11,9 +11,7 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      <main
-        className={"mt-8 w-full border-t-2 border-gray-200 bg-black text-white"}
-      >
+      <main className={"mt-8 w-full border-t-2 border-gray-100"}>
         <OpenSourceProjectsSection />
       </main>
 

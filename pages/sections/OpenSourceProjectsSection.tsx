@@ -75,23 +75,21 @@ const projects: Project[] = [
 ];
 
 export default function OpenSourceProjectsSection() {
-  return (
-    <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
-      <div
-        className={"py-12 text-center text-6xl md:py-3 md:py-12 md:text-7xl"}
-      >
-        <div className={"flex w-fit flex-col items-start"}>
-          <h1>Passion</h1>
-          <h1
-            className={"bg-white text-8xl font-bold text-black md:text-[10rem]"}
-          >
-            Projects
+  function Heading() {
+    return (
+      <div className={"text-center text-6xl md:py-3 md:py-36 md:text-7xl"}>
+        <div className={"flex flex-col"}>
+          <h1 className={"m-auto text-8xl font-bold md:text-8xl"}>
+            <span className={"text-[9rem] text-yellow-300"}>&ldquo;</span>
+            Passion Projects
+            <span className={"text-[9rem] text-yellow-300"}>&rdquo;</span>
           </h1>
+
           <Link href={"https://github.com/druage"}>
             <a target={"_blank"}>
               <button
                 type="button"
-                className="mt-20 inline-flex items-center border border-transparent bg-white px-6 py-2 text-base font-medium text-black shadow-sm hover:bg-gray-200 hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 md:text-lg"
+                className="mt-20 inline-flex items-center border border-transparent bg-zinc-800 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-800 focus:ring-offset-2 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -105,6 +103,12 @@ export default function OpenSourceProjectsSection() {
           </Link>
         </div>
       </div>
+    );
+  }
+
+  return (
+    <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
+      <Heading />
 
       <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
         {projects.map((it) => (
