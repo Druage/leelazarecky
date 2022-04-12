@@ -102,24 +102,24 @@ export default function OpenSourceProjectsSection() {
               </span>
             </span>
           </h1>
-
-          <Link href={"https://github.com/druage"}>
-            <a target={"_blank"}>
-              <button
-                type="button"
-                className="mt-20 inline-flex items-center border border-transparent bg-zinc-800 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-800 focus:ring-offset-2 md:text-lg"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  height={24}
-                  width={24}
-                  className={"mr-2"}
-                />
-                View GitHub Account
-              </button>
-            </a>
-          </Link>
         </div>
+
+        <Link href={"https://github.com/druage"}>
+          <a target={"_blank"} className={"mt-6 block"}>
+            <button
+              type="button"
+              className="inline-flex items-center border border-transparent bg-zinc-800 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-800 focus:ring-offset-2 md:text-lg"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                height={24}
+                width={24}
+                className={"mr-2"}
+              />
+              View GitHub Account
+            </button>
+          </a>
+        </Link>
       </div>
     );
   }
