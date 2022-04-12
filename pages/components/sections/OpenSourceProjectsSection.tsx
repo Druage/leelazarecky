@@ -74,7 +74,7 @@ const projects: Project[] = [
   },
 ];
 
-export default function OpenSourceProjects() {
+export default function OpenSourceProjectsSection() {
   return (
     <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
       <div
