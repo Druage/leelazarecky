@@ -24,7 +24,7 @@ export default function AboutSection() {
           />
         </div>
 
-        <div>
+        <div className={"sm:w-full md:w-[500px]"}>
           <h1 className={"mb-4 block text-7xl font-bold"}>Lee Lazarecky</h1>
           <h2 className={"block w-fit bg-black px-3 py-1 text-2xl text-white"}>
             Daytime Software Developer
@@ -84,7 +84,7 @@ export default function AboutSection() {
             </Link>
           </div>
 
-          <div className={"mx-auto py-8 sm:w-full md:w-[40rem]"}>
+          <div className={"w-full py-8"}>
             <p>
               I am a{" "}
               <span
