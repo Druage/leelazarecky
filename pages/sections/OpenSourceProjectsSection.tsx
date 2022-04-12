@@ -80,9 +80,27 @@ export default function OpenSourceProjectsSection() {
       <div className={"text-center text-6xl md:py-3 md:py-36 md:text-7xl"}>
         <div className={"flex flex-col"}>
           <h1 className={"m-auto text-8xl font-bold md:text-8xl"}>
-            <span className={"text-[9rem] text-yellow-300"}>&ldquo;</span>
+            <span className={"z-1 relative text-[9rem] text-yellow-400"}>
+              &ldquo;
+              <span
+                className={
+                  "absolute left-1 bottom-5 z-[-1] text-[9rem] text-black"
+                }
+              >
+                &ldquo;
+              </span>
+            </span>
             Passion Projects
-            <span className={"text-[9rem] text-yellow-300"}>&rdquo;</span>
+            <span className={"z-1 relative text-[9rem] text-yellow-400"}>
+              &rdquo;
+              <span
+                className={
+                  "absolute right-1 bottom-5 z-[-1] text-[9rem] text-black"
+                }
+              >
+                &rdquo;
+              </span>
+            </span>
           </h1>
 
           <Link href={"https://github.com/druage"}>
