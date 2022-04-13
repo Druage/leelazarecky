@@ -78,7 +78,7 @@ const projects: Project[] = [
 export default function OpenSourceProjectsSection() {
   function Heading() {
     return (
-      <div className={"text-center text-6xl md:py-3 md:py-36 md:text-7xl"}>
+      <div className={"text-center text-6xl md:py-3 md:py-36 md:text-7xl bg-[url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e)]"}>
         <div className={"flex flex-col"}>
           <h1 className={"m-auto text-8xl font-bold md:text-8xl"}>
             <span className={"z-1 relative text-[9rem] text-yellow-400"}>

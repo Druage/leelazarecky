@@ -6,7 +6,7 @@ import PageHead from "./sections/PageHead";
 
 const Home: NextPage = () => {
   return (
-    <div id={"about"} className={"pt-8"}>
+    <div id={"about"}>
       <PageHead />
 
       <AboutSection />
