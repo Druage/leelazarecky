@@ -10,7 +10,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <div className={"aboutSection py-12 px-4"}>
+    <div className={"aboutSection h-screen px-4"}>
       <NavBar />
 
       <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
