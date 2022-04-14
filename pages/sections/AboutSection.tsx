@@ -11,10 +11,10 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutSection() {
   return (
-    <div className={"relative h-screen px-4"}>
+    <div className={"relative h-screen px-4 flex flex-col"}>
       <NavBar />
 
-      <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
+      <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24 flex-1">
         <div className={"relative h-[60vh] w-full md:w-[400px]"}>
           <Image
             className={"rounded-3xl"}
