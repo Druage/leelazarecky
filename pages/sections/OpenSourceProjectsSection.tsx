@@ -5,6 +5,7 @@ import Image from "next/image";
 
 type Project = {
   name: string;
+  longName: string;
   description: string;
   image: {
     src: string;
@@ -18,19 +19,21 @@ type Project = {
 const projects: Project[] = [
   {
     name: "Phoenix",
+    longName: "A Multi-System Emulator",
     description:
       "Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on" +
       " emulated consoles on their computer.",
     image: {
-      src: "/phx.png",
-      height: 500,
-      width: 300,
+      src: "/phoenix-v2.png",
+      height: 700,
+      width: 800,
     },
     githubLink: "https://github.com/team-phoenix/Phoenix",
     tags: ["C++", "SQLite", "Emulation", "Qt", "QML", "CMake"],
   },
   {
     name: "RetroQuest",
+    longName: "A Remote Retrospective Tool",
     description:
       "A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement." +
       " This tool is intended to be used as a remote retrospective tool but can also be used as a way to facilitate an anonymous in-person retrospective." +
@@ -45,6 +48,7 @@ const projects: Project[] = [
   },
   {
     name: "Smash ELO Tracker",
+    longName: "Super Smash Bros. Tourney Ranking",
     description:
       "Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day. This React application allows users" +
       " to keep track of who is the best Smash player in the office. Users can keep track of the rules and submit their match wins and losses." +
@@ -57,9 +61,9 @@ const projects: Project[] = [
     githubLink: "",
     tags: ["Java", "Spring Boot", "React.js", "Design"],
   },
-
   {
     name: "AuthQuest",
+    longName: "An OAuth2 and OpenID Server",
     description:
       "An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows" +
       "the OAuth2 and OpenID specifications. " +
@@ -78,65 +82,55 @@ const projects: Project[] = [
 export default function OpenSourceProjectsSection() {
   function Heading() {
     return (
-      <div className={"text-center text-6xl md:py-3 md:text-7xl bg-[url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e)]"}>
+      <div className={"text-center text-6xl md:text-7xl bg-[url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e)]"}>
         <div className={"flex flex-col"}>
-          <p className="pt-12 pb-4 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl">
+          <p className="pt-12 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl">
             <span>Passion Projects</span>
           </p>
         </div>
 
-        <Link href={"https://github.com/druage"}>
-          <a target={"_blank"} className={"mt-6 block"}>
-            <button
-              type="button"
-              className="inline-flex items-center border border-transparent bg-zinc-800 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-800 focus:ring-offset-2 md:text-lg"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                height={24}
-                width={24}
-                className={"mr-2"}
-              />
-              View GitHub Account
-            </button>
-          </a>
-        </Link>
+        {/*<Link href={"https://github.com/druage"}>*/}
+        {/*  <a target={"_blank"} className={"mt-6 block"}>*/}
+        {/*    <button*/}
+        {/*      type="button"*/}
+        {/*      className="inline-flex items-center border border-transparent bg-zinc-800 px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-zinc-700 hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-800 focus:ring-offset-2 md:text-lg"*/}
+        {/*    >*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faGithub}*/}
+        {/*        height={24}*/}
+        {/*        width={24}*/}
+        {/*        className={"mr-2"}*/}
+        {/*      />*/}
+        {/*      View GitHub Account*/}
+        {/*    </button>*/}
+        {/*  </a>*/}
+        {/*</Link>*/}
       </div>
     );
   }
 
   function ProjectDescription(project: Project) {
     return (
-      <div className={"w-[20rem]"}>
+      <div className={"w-[20rem] flex flex-col gap-2"}>
         <h1 className={"text-2xl md:text-3xl font-bold"}>{project.name}</h1>
+        <div className={"text-xl md:text-xl font-bold text-gray-600"}>{project.longName}</div>
+        <div >{project.description}</div>
         {project.githubLink && project.githubLink !== "" && (
-          <Link href={"https://github.com/druage"}>
-            <a
-              target={"_blank"}
-              className="mt-2 mb-4 inline-flex items-center bg-zinc-800 px-3 py-0.5 text-sm font-medium text-white hover:underline"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                height={16}
-                width={16}
-                className={"mr-1"}
-              />
-              View Code
-            </a>
-          </Link>
+            <Link href={"https://github.com/druage"}>
+              <a
+                  target={"_blank"}
+                  className="inline-flex items-center text-sm font-medium underline"
+              >
+                <FontAwesomeIcon
+                    icon={faGithub}
+                    height={16}
+                    width={16}
+                    className={"mr-1"}
+                />
+                View Code
+              </a>
+            </Link>
         )}
-        <div className={"text-1xl md:text-1xl"}>{project.description}</div>
-
-        <div className={"mt-6 flex flex-wrap gap-3"}>
-          {project.tags.map((tag) => (
-            <span
-              key={tag}
-              className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
       </div>
     );
   }
@@ -150,13 +144,13 @@ export default function OpenSourceProjectsSection() {
           <div key={it.name} className={"flex flex-row justify-center gap-4"}>
             {ProjectDescription(it)}
 
-            <div className={"bg-white text-black"}>
-              <div className={"relative m-auto h-[700px] w-[750px]"}>
+            <div className={"relative w-5/12 h-screen"}>
+              <div className={"absolute m-auto h-[500px] w-[1000px] shadow"}>
                 <Image
                   src={it.image.src}
                   alt="project-image"
                   objectFit="contain"
-                  className={"object-top"}
+                  className={"object-left-top"}
                   layout={"fill"}
                 />
               </div>
