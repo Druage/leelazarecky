@@ -8,6 +8,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
 
 export default function AboutSection() {
   return (
@@ -118,14 +119,8 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <a href={"#technical-skills"} className={"flex w-auto flex-1"}>
-        <FontAwesomeIcon
-          icon={faChevronDown}
-          height={20}
-          width={20}
-          className={"m-auto opacity-70"}
-        />
-      </a>
+      <ScrollNextSectionButton href={"#technical-skills"}/>
+
     </div>
   );
 }
