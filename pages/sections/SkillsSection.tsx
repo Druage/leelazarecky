@@ -15,6 +15,10 @@ export default function SkillsSection() {
             <div className={"text-center"}>4+ Years</div>
             <div className={"text-2xl font-normal"}>C++ Emulation Programming Experience</div>
           </div>
+          <div className={"p-2 text-4xl font-extrabold"}>
+            <div className={"text-center"}>10+ Years</div>
+            <div className={"text-2xl font-normal"}>Diamond League Starcraft II Player</div>
+          </div>
         </div>
         <div className="max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:mt-8">
