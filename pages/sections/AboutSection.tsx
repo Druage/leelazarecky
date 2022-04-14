@@ -14,25 +14,25 @@ export default function AboutSection() {
       <NavBar />
 
       <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
-        <div className={"relative h-[550px] w-full bg-gray-800 md:w-[400px]"}>
+        <div className={"relative h-[60vh] w-full md:w-[400px]"}>
           <Image
             className={"rounded-3xl"}
             src={"/profile_image.png"}
             alt="portfolio-profile-image"
-            objectFit="cover"
+            objectFit="contain"
             layout={"fill"}
           />
         </div>
 
         <div className={"sm:w-full md:w-[500px]"}>
-          <h1 className={"mb-4 block text-6xl font-extrabold"}>
+          <h1 className={"mb-4 block text-5xl font-extrabold"}>
             Lee Lazarecky
           </h1>
-          <h2 className={"block w-fit bg-black px-3 py-1 text-2xl text-white"}>
+          <h2 className={"block w-fit bg-black px-3 py-1 text-white"}>
             Daytime Software Developer
             <h2
               className={
-                "w-fill -mx-3 mt-1 -mb-1 block bg-gray-100 px-3 py-1 text-2xl text-black"
+                "w-fill -mx-3 mt-1 -mb-1 block bg-gray-100 px-3 py-1 text-black"
               }
             >
               Moonlight Designer
@@ -86,7 +86,7 @@ export default function AboutSection() {
             </Link>
           </div>
 
-          <div className={"w-full py-8 text-lg"}>
+          <div className={"w-full py-8"}>
             <p>
               I am a{" "}
               <span
