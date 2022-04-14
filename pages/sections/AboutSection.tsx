@@ -11,10 +11,10 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutSection() {
   return (
-    <div className={"relative h-screen px-4 flex flex-col"}>
+    <div className={"relative flex h-screen flex-col px-4"}>
       <NavBar />
 
-      <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24 flex-1">
+      <div className="flex flex-1 flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
         <div className={"relative h-[60vh] w-full md:w-[400px]"}>
           <Image
             className={"rounded-3xl"}
@@ -118,12 +118,12 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <a href={"#technical-skills"}>
+      <a href={"#technical-skills"} className={"flex w-auto flex-1"}>
         <FontAwesomeIcon
           icon={faChevronDown}
           height={20}
           width={20}
-          className={"absolute bottom-16 left-0 right-0 m-auto opacity-70"}
+          className={"m-auto opacity-70"}
         />
       </a>
     </div>
