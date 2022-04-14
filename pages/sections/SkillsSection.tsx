@@ -1,6 +1,6 @@
 export default function SkillsSection() {
     return (
-        <div className="bg-white">
+        <div id="technical-skills" className="bg-white">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
                     Technical Skills

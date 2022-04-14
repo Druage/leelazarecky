@@ -118,7 +118,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <a href={"#open-source-projects"}>
+      <a href={"#technical-skills"}>
         <FontAwesomeIcon
           icon={faChevronDown}
           height={20}
