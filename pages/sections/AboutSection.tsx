@@ -118,12 +118,14 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <FontAwesomeIcon
-        icon={faChevronDown}
-        height={20}
-        width={20}
-        className={"absolute bottom-16 left-0 right-0 m-auto opacity-70"}
-      />
+      <a href={"#open-source-projects"}>
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          height={20}
+          width={20}
+          className={"absolute bottom-16 left-0 right-0 m-auto opacity-70"}
+        />
+      </a>
     </div>
   );
 }
