@@ -8,13 +8,13 @@ export default function NavBar() {
       }
     >
       <Link href={"/"}>
-        <a className={"hover:text-blue-500"}>About</a>
+        <a className={"hover:text-blue-500 hover:underline"}>About</a>
       </Link>
       <Link href={"#technical-skills"}>
-        <a className={"hover:text-blue-500"}>Technical Skills</a>
+        <a className={"hover:text-blue-500 hover:underline"}>Technical Skills</a>
       </Link>
       <Link href={"#open-source-projects"}>
-        <a className={"hover:text-blue-500"}>Passion Projects</a>
+        <a className={"hover:text-blue-500 hover:underline"}>Passion Projects</a>
       </Link>
     </header>
   );
