@@ -127,13 +127,13 @@ export default function OpenSourceProjectsSection() {
 
   function ProjectDescription(project: Project) {
     return (
-      <div className={"m-auto w-1/2 py-8"}>
-        <h1 className={"text-2xl md:text-3xl"}>{project.name}</h1>
+      <div className={"w-[20rem]"}>
+        <h1 className={"text-2xl md:text-3xl font-bold"}>{project.name}</h1>
         {project.githubLink && project.githubLink !== "" && (
           <Link href={"https://github.com/druage"}>
             <a
               target={"_blank"}
-              className="mt-2 mb-4 inline-flex items-center rounded-full bg-zinc-800 px-3 py-0.5 text-sm font-medium text-white hover:underline"
+              className="mt-2 mb-4 inline-flex items-center bg-zinc-800 px-3 py-0.5 text-sm font-medium text-white hover:underline"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -141,7 +141,7 @@ export default function OpenSourceProjectsSection() {
                 width={16}
                 className={"mr-1"}
               />
-              View Github Project
+              View Code
             </a>
           </Link>
         )}
@@ -165,13 +165,13 @@ export default function OpenSourceProjectsSection() {
     <div id={"open-source-projects"} className={"m-auto max-w-7xl pb-64"}>
       <Heading />
 
-      <div className={"mt-2 grid grid-cols-1 gap-24 md:mt-8"}>
+      <div className={"mt-2 md:mt-8"}>
         {projects.map((it) => (
-          <div key={it.name}>
+          <div key={it.name} className={"flex flex-row justify-center gap-4"}>
             {ProjectDescription(it)}
 
             <div className={"bg-white text-black"}>
-              <div className={"relative m-auto h-[700px] w-[1000px]"}>
+              <div className={"relative m-auto h-[700px] w-[750px]"}>
                 <Image
                   src={it.image.src}
                   alt="project-image"
