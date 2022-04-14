@@ -2,9 +2,9 @@ import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
 
 export default function SkillsSection() {
     return (
-        <div id="technical-skills" className="min-h-screen bg-white border-b-2 border-gray-100 pb-20 flex flex-col">
-            <p className="pt-12 pb-4 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl">
-                <span>Technical Skills</span>
+        <div id="technical-skills" className="min-h-screen bg-white border-b-2 border-gray-100 pb-20 flex flex-col justify-center">
+            <p className="pt-12 pb-4 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl flex-1 flex justify-center items-center text-center">
+                Technical Skills
             </p>
 
             <div className={"flex flex-row items-center justify-center gap-12 flex-1"}>
