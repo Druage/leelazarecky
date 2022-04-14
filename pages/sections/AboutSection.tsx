@@ -7,12 +7,11 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
 
 export default function AboutSection() {
   return (
-    <div className={"relative flex h-screen flex-col px-4"}>
+    <div className={"flex h-screen flex-col px-4"}>
       <NavBar />
 
       <div className="flex flex-1 flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
@@ -119,8 +118,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <ScrollNextSectionButton href={"#technical-skills"}/>
-
+      <ScrollNextSectionButton href={"#technical-skills"} />
     </div>
   );
 }
