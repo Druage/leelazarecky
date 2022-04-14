@@ -7,10 +7,11 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutSection() {
   return (
-    <div className={"aboutSection h-screen px-4"}>
+    <div className={"relative h-screen px-4"}>
       <NavBar />
 
       <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
@@ -116,6 +117,13 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
+
+      <FontAwesomeIcon
+        icon={faChevronDown}
+        height={20}
+        width={20}
+        className={"absolute bottom-16 left-0 right-0 m-auto opacity-70"}
+      />
     </div>
   );
 }

@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      <main className={"mt-8 w-full border-t-2 border-gray-100"}>
+      <main className={"w-full border-t-2 border-gray-100"}>
         <OpenSourceProjectsSection />
       </main>
 
