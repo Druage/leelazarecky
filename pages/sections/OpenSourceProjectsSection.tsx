@@ -78,31 +78,11 @@ const projects: Project[] = [
 export default function OpenSourceProjectsSection() {
   function Heading() {
     return (
-      <div className={"text-center text-6xl md:py-3 md:py-36 md:text-7xl bg-[url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e)]"}>
+      <div className={"text-center text-6xl md:py-3 md:text-7xl bg-[url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e)]"}>
         <div className={"flex flex-col"}>
-          <h1 className={"m-auto text-8xl font-bold md:text-8xl"}>
-            <span className={"z-1 relative text-[9rem] text-yellow-400"}>
-              &ldquo;
-              <span
-                className={
-                  "absolute left-1 bottom-5 z-[-1] text-[9rem] text-black"
-                }
-              >
-                &ldquo;
-              </span>
-            </span>
-            Passion Projects
-            <span className={"z-1 relative text-[9rem] text-yellow-400"}>
-              &rdquo;
-              <span
-                className={
-                  "absolute right-1 bottom-5 z-[-1] text-[9rem] text-black"
-                }
-              >
-                &rdquo;
-              </span>
-            </span>
-          </h1>
+          <p className="pt-12 pb-4 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl">
+            <span>Passion Projects</span>
+          </p>
         </div>
 
         <Link href={"https://github.com/druage"}>

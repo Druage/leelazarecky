@@ -1,6 +1,6 @@
 export default function SkillsSection() {
   return (
-    <div id="technical-skills" className="min-h-screen bg-white">
+    <div id="technical-skills" className="min-h-screen bg-white border-b-2 border-gray-100 pb-20">
       <p className="pt-12 pb-4 text-center text-base font-extrabold uppercase tracking-wider text-gray-600 text-2xl">
         <span>Technical Skills</span>
       </p>
