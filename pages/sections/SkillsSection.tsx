@@ -1,3 +1,5 @@
+import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
+
 export default function SkillsSection() {
     return (
         <div id="technical-skills" className="min-h-screen bg-white border-b-2 border-gray-100 pb-20 flex flex-col">
@@ -95,6 +97,9 @@ export default function SkillsSection() {
                     </div>
                 </div>
             </div>
+
+            <ScrollNextSectionButton href={"#open-source-projects"}/>
+
         </div>
     );
 }
