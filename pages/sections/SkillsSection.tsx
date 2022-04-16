@@ -4,15 +4,13 @@ export default function SkillsSection() {
   return (
     <div
       id="technical-skills"
-      className="flex h-screen flex-col justify-center border-b-2 border-gray-100 bg-white"
+      className="flex min-h-screen flex-col justify-center border-b-2 border-gray-100 bg-white"
     >
-      <p className="flex flex-1 items-center justify-center text-center text-center text-base text-2xl font-extrabold uppercase tracking-wider text-gray-600">
+      <p className="flex items-center justify-center py-12 text-center text-center text-base text-2xl font-extrabold uppercase tracking-wider text-gray-600">
         Technical Skills
       </p>
 
-      <div
-        className={"flex flex-1 flex-row items-center justify-center gap-12"}
-      >
+      <div className={"flex flex-row items-center justify-center gap-12"}>
         <div className={"flex flex-col items-center justify-center gap-16"}>
           <div className={"p-2 text-4xl font-extrabold"}>
             <div className={"text-center"}>5+ Years</div>

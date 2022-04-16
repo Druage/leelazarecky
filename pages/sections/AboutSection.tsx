@@ -11,19 +11,17 @@ import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
 
 export default function AboutSection() {
   return (
-    <div className={"flex h-screen flex-col px-4"}>
+    <div className={"flex min-h-screen flex-col"}>
       <NavBar />
 
-      <div className="flex flex-1 flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
-        <div className={"relative h-[60vh] w-full md:w-[400px]"}>
-          <Image
-            className={"rounded-3xl"}
-            src={"/profile_image.png"}
-            alt="portfolio-profile-image"
-            objectFit="contain"
-            layout={"fill"}
-          />
-        </div>
+      <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
+        <Image
+          src={"/profile_image.png"}
+          alt="portfolio-profile-image"
+          objectFit="contain"
+          height={460}
+          width={340}
+        />
 
         <div className={"sm:w-full md:w-[500px]"}>
           <h1 className={"mb-4 block text-5xl font-extrabold"}>
