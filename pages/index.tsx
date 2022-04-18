@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
-import AboutSection from "./sections/AboutSection";
-import OpenSourceProjectsSection from "./sections/OpenSourceProjectsSection";
-import FooterSection from "./sections/FooterSection";
-import PageHead from "./sections/PageHead";
-import SkillsSection from "./sections/SkillsSection";
+import AboutSection from "./components/sections/AboutSection";
+import OpenSourceProjectsSection from "./components/sections/OpenSourceProjectsSection";
+import FooterSection from "./components/sections/FooterSection";
+import SkillsSection from "./components/sections/SkillsSection";
 
 const Home: NextPage = () => {
   return (
     <div id={"about"}>
-      <PageHead />
 
       <AboutSection />
 

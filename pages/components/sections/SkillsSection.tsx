@@ -1,10 +1,9 @@
-import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
+import SectionLayout from "../layouts/SectionLayout";
 
 export default function SkillsSection() {
   return (
-    <div
-      id="technical-skills"
-      className="flex min-h-screen flex-col justify-center border-b-2 border-gray-100 bg-white"
+    <SectionLayout
+      id={"technical-skills"}
     >
       <p className="flex items-center justify-center py-12 text-center text-center text-base text-2xl font-extrabold uppercase tracking-wider text-gray-600">
         Technical Skills
@@ -84,7 +83,6 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      <ScrollNextSectionButton href={"#open-source-projects"} />
-    </div>
+    </SectionLayout>
   );
 }

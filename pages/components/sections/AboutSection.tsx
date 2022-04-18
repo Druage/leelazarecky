@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar";
+import NavBar from "../NavBar";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +7,11 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import ScrollNextSectionButton from "../components/ScrollNextSectionButton";
+import SectionLayout from "../layouts/SectionLayout";
 
 export default function AboutSection() {
   return (
-    <div className={"flex min-h-screen flex-col"}>
+    <SectionLayout>
       <NavBar />
 
       <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
@@ -116,7 +116,6 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <ScrollNextSectionButton href={"#technical-skills"} />
-    </div>
+    </SectionLayout>
   );
 }

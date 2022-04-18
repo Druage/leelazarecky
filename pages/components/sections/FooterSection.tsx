@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar";
+import NavBar from "../NavBar";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
