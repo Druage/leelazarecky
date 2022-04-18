@@ -4,10 +4,8 @@ export default function SkillsSection() {
   return (
     <SectionLayout
       id={"technical-skills"}
+      heading={"Technical Skills"}
     >
-      <p className="flex items-center justify-center py-12 text-center text-center text-base text-2xl font-extrabold uppercase tracking-wider text-gray-600">
-        Technical Skills
-      </p>
 
       <div className={"flex flex-row items-center justify-center gap-12"}>
         <div className={"flex flex-col items-center justify-center gap-16"}>
