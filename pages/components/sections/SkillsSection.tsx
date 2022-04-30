@@ -35,15 +35,15 @@ export default function SkillsSection() {
                 alt="Next.js"
               />
             </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex justify-center items-center bg-gray-50 py-8 px-8">
               <img
-                className="max-h-12"
+                className="max-h-8"
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React.js"
               />
               <span
                 className={
-                  "ml-2 flex items-center text-4xl font-bold text-cyan-400"
+                  "ml-2 flex items-center text-2xl font-bold text-cyan-400"
                 }
               >
                 React
