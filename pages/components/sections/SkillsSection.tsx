@@ -7,7 +7,7 @@ export default function SkillsSection() {
       heading={"Technical Skills"}
     >
 
-      <div className={"flex flex-row items-center justify-center gap-12"}>
+      <div className={"flex flex-col md:flex-row items-center justify-center gap-12"}>
         <div className={"flex flex-col items-center justify-center gap-16"}>
           <div className={"p-2 text-4xl font-extrabold"}>
             <div className={"text-center"}>5+ Years</div>
