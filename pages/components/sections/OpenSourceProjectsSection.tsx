@@ -84,7 +84,7 @@ export default function OpenSourceProjectsSection() {
 
     function ProjectDescription(project: Project) {
         return (
-            <div className={"w-[20rem] flex flex-col gap-2"}>
+            <div className={"pl-6 md:pl-0 w-[20rem] flex flex-col gap-2"}>
                 <h1 className={"text-2xl md:text-3xl font-bold"}>{project.name}</h1>
                 <div className={"text-xl md:text-xl font-bold text-gray-600"}>{project.longName}</div>
                 <div>{project.description}</div>
