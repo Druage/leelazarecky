@@ -23,7 +23,7 @@ export default function AboutSection() {
           width={340}
         />
 
-        <div className={"sm:w-full md:w-[500px]"}>
+        <div className={"w-3/4 md:w-[500px]"}>
           <h1 className={"mb-4 block text-5xl font-extrabold"}>
             Lee Lazarecky
           </h1>
