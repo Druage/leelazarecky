@@ -27,7 +27,7 @@ export default function AboutSection() {
           <h1 className={"mb-4 block text-5xl font-extrabold"}>
             Lee Lazarecky
           </h1>
-          <h2 className={"block w-fit bg-black px-3 py-1 text-white"}>
+          <div className={"block w-fit bg-black px-3 py-1 text-white"}>
             Daytime Software Developer
             <h2
               className={
@@ -36,7 +36,7 @@ export default function AboutSection() {
             >
               Moonlight Designer
             </h2>
-          </h2>
+          </div>
 
           <div className={"badgeContainer mt-4 flex justify-items-start gap-4"}>
             <Link href={"https://github.com/druage"}>
