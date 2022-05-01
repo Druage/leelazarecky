@@ -116,8 +116,8 @@ export default function OpenSourceProjectsSection() {
                     <div key={it.name} className={"flex flex-row justify-center gap-4 h-[700px] relative"}>
                         {ProjectDescription(it)}
 
-                        <div className={"relative w-5/12"}>
-                            <div className={"absolute m-auto h-[500px] w-[1000px] shadow"}>
+                        <div className={"relative w-5/12 overflow-hidden"}>
+                            <div className={"absolute m-auto h-[500px] w-[1000px]"}>
                                 <Image
                                     src={it.image.src}
                                     alt="project-image"
