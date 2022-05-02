@@ -83,7 +83,11 @@ const projects: Project[] = [
 export default function OpenSourceProjectsSection() {
   function ProjectDescription(project: Project) {
     return (
-      <div className={"flex-1 pl-6 md:pr-12 flex justify-end"}>
+      <div
+        className={
+          "flex flex-1 justify-center pl-0 md:justify-end md:pl-6 md:pr-12"
+        }
+      >
         <div className={"flex w-[20rem] flex-col gap-2"}>
           <h1 className={"text-2xl font-bold md:text-3xl"}>{project.name}</h1>
           <div className={"text-xl font-bold text-gray-600 md:text-xl"}>
@@ -117,12 +121,20 @@ export default function OpenSourceProjectsSection() {
         {projects.map((it) => (
           <div
             key={it.name}
-            className={"relative flex h-[700px] flex-row justify-between gap-4"}
+            className={
+              "relative mb-8 flex h-auto flex-col justify-between gap-4 md:mb-0 md:h-[700px] md:flex-row"
+            }
           >
             {ProjectDescription(it)}
 
-            <div className={"relative w-5/12 md:w-6/12 overflow-hidden"}>
-              <div className={"relative m-auto h-[500px] w-[1000px]"}>
+            <div
+              className={
+                "relative w-full overflow-hidden pl-9 md:w-6/12 md:p-0"
+              }
+            >
+              <div
+                className={"relative m-auto h-[500px] w-[1000px] md:h-[500px]"}
+              >
                 <Image
                   src={it.image.src}
                   alt="project-image"
