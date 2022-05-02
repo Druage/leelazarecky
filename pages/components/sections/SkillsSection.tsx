@@ -2,12 +2,12 @@ import SectionLayout from "../layouts/SectionLayout";
 
 export default function SkillsSection() {
   return (
-    <SectionLayout
-      id={"technical-skills"}
-      heading={"Technical Skills"}
-    >
-
-      <div className={"flex flex-col md:flex-row items-center justify-center gap-12"}>
+    <SectionLayout id={"technical-skills"} heading={"Technical Skills"}>
+      <div
+        className={
+          "flex flex-col items-center justify-center gap-12 md:flex-row"
+        }
+      >
         <div className={"flex flex-col items-center justify-center gap-16"}>
           <div className={"p-2 text-4xl font-extrabold"}>
             <div className={"text-center"}>5+ Years</div>
@@ -15,14 +15,14 @@ export default function SkillsSection() {
           </div>
           <div className={"p-2 text-4xl font-extrabold"}>
             <div className={"text-center"}>4+ Years</div>
-            <div className={"text-2xl font-normal"}>
-              C++ Emulation Programming Experience
+            <div className={"text-center text-2xl font-normal"}>
+              C++ Emulation <pre>Programming Experience</pre>
             </div>
           </div>
           <div className={"p-2 text-4xl font-extrabold"}>
             <div className={"text-center"}>10+ Years</div>
-            <div className={"text-2xl font-normal"}>
-              Masters League Starcraft II Player
+            <div className={"text-center text-2xl font-normal"}>
+              Masters League <pre>Starcraft II Player</pre>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function SkillsSection() {
                 alt="Next.js"
               />
             </div>
-            <div className="col-span-1 flex justify-center items-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex items-center justify-center bg-gray-50 py-8 px-8">
               <img
                 className="max-h-8"
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -80,7 +80,6 @@ export default function SkillsSection() {
           </div>
         </div>
       </div>
-
     </SectionLayout>
   );
 }
