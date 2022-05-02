@@ -12,6 +12,11 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+pre {
+  font-family: "Inter", sans-serif;
 }
 
 @tailwind base;
