@@ -122,7 +122,7 @@ export default function OpenSourceProjectsSection() {
             {ProjectDescription(it)}
 
             <div className={"relative w-5/12 md:w-6/12 overflow-hidden"}>
-              <div className={"absolute m-auto h-[500px] w-[1000px]"}>
+              <div className={"relative m-auto h-[500px] w-[1000px]"}>
                 <Image
                   src={it.image.src}
                   alt="project-image"
