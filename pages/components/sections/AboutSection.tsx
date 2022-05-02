@@ -23,7 +23,7 @@ export default function AboutSection() {
           width={340}
         />
 
-        <div className={"w-3/4 md:w-[500px]"}>
+        <div className={"w-full px-6 md:w-[500px] md:px-0"}>
           <h1 className={"mb-4 block text-5xl font-extrabold"}>
             Lee Lazarecky
           </h1>
@@ -115,7 +115,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-
     </SectionLayout>
   );
 }

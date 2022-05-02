@@ -88,7 +88,7 @@ export default function OpenSourceProjectsSection() {
           "flex flex-1 justify-center pl-0 md:justify-end md:pl-6 md:pr-12"
         }
       >
-        <div className={"flex w-[20rem] flex-col gap-2"}>
+        <div className={"flex w-full px-6 md:w-[20rem] flex-col gap-2"}>
           <h1 className={"text-2xl font-bold md:text-3xl"}>{project.name}</h1>
           <div className={"text-xl font-bold text-gray-600 md:text-xl"}>
             {project.longName}
@@ -129,7 +129,7 @@ export default function OpenSourceProjectsSection() {
 
             <div
               className={
-                "relative w-full overflow-hidden pl-9 md:w-6/12 md:p-0"
+                "relative w-full overflow-hidden pl-6 md:w-6/12 md:p-0"
               }
             >
               <div
