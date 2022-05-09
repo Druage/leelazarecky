@@ -9,7 +9,7 @@ import {
 
 export default function FooterSection() {
   return (
-    <footer className={"bg-gray-800 px-4 pt-28 pb-28 text-gray-300"}>
+    <footer className={"bg-black px-4 pt-28 pb-28 text-gray-300"}>
       <NavBar />
       <div className={"flex justify-center gap-16"}>
         <Link href={"https://github.com/druage"}>
