@@ -16,7 +16,7 @@ export default function AboutSection() {
 
       <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24">
         <Image
-          src={"/profile_image.png"}
+          src={"/profile_image.jpg"}
           alt="portfolio-profile-image"
           objectFit="contain"
           height={460}
