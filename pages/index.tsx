@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
             <AboutSection/>
 
-            <main className={"w-full border-t-2 border-gray-100"}>
+            <main className={"w-full border-gray-100"}>
                 <SkillsSection/>
 
                 <OpenSourceProjectsSection/>
