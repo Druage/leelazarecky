@@ -20,7 +20,7 @@ export default function AboutSection() {
           alt="portfolio-profile-image"
           objectFit="contain"
           height={460}
-          width={340}
+          width={400}
         />
 
         <div className={"w-full px-6 md:w-[500px] md:px-0"}>
