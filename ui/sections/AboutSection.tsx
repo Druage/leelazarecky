@@ -1,4 +1,3 @@
-import NavBar from "../NavBar";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import SectionLayout from "../layouts/SectionLayout";
+import NavBar from "../components/NavBar";
 
 export default function AboutSection() {
   return (
