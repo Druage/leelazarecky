@@ -7,6 +7,7 @@ export type Project = {
         height: number;
         width: number;
     };
+    altImages?: string[];
     tags: string[];
     githubLink: string;
     slug: string;

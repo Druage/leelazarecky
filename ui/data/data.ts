@@ -13,6 +13,7 @@ export const PROJECTS: Project[] = [
             height: 700,
             width: 800,
         },
+        altImages: ["/phoenix-with-games.png"],
         githubLink: "https://github.com/team-phoenix/Phoenix",
         tags: ["C++", "SQLite", "Emulation", "Qt", "QML", "CMake"],
     },
@@ -23,10 +24,15 @@ export const PROJECTS: Project[] = [
         description:
             "A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement.",
         image: {
-            src: "/retroquest_login.png",
+            src: "/retroquest/retroquest-team-screen.png",
             height: 500,
             width: 300,
         },
+        altImages: [
+            "/retroquest/retroquest-login-screen.png",
+            "/retroquest/retroquest-team-screen-dark.png",
+            "/retroquest/retroquest-team-screen-mobile.png",
+        ],
         githubLink: "https://github.com/fordlabs/retroquest",
         tags: ["React.js", "MySQL", "Angular", "Java", "Spring Boot", "Design"],
     },
@@ -37,10 +43,16 @@ export const PROJECTS: Project[] = [
         description:
             "Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day.",
         image: {
-            src: "/smash_elo_tracker.png",
+            src: "/smash-bros/elo-tracker-main.png",
             height: 500,
             width: 300,
         },
+        altImages: [
+            "/smash-bros/elo-tracker-add-player-screen.png",
+            "/smash-bros/elo-tracker-record-screen.png",
+            "/smash-bros/elo-tracker-match-history-screen.png",
+            "/smash-bros/elo-tracker-rules-screen.png",
+        ],
         githubLink: "",
         tags: ["Java", "Spring Boot", "React.js", "Design"],
     },
@@ -52,10 +64,15 @@ export const PROJECTS: Project[] = [
             "An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows" +
             "the OAuth2 and OpenID specifications. ",
         image: {
-            src: "/authquest.png",
+            src: "/authquest/authquest-dashboard.png",
             height: 500,
             width: 300,
         },
+
+        altImages: [
+            "/authquest/authquest-signup-screen.png",
+            "/authquest/authquest-verify-account.png",
+        ],
         githubLink: "",
         tags: ["Vue.js", "Kotlin", "MySql", "Java", "Spring Boot", "Design"],
     },

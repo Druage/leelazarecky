@@ -7,9 +7,10 @@ interface Props {
     projectName?: string;
     description?: string;
     src?: string;
+    altImagesSrc?: string[];
 }
 
-function Layout({children, projectName, description, src}: Props) {
+function Layout({children, projectName, description, src, altImagesSrc}: Props) {
     return (
         <section className={"p-12 max-w-[1300px] m-auto"}>
 
@@ -115,6 +116,20 @@ function Layout({children, projectName, description, src}: Props) {
                             {/*</figcaption>*/}
                         </figure>}
 
+                        {altImagesSrc && altImagesSrc.map(it => <figure key={it}>
+                            <Image
+                                className="w-full rounded-lg"
+                                src={it}
+                                alt=""
+                                width={1310}
+                                objectFit={"contain"}
+                                height={873}
+                            />
+                            {/*<figcaption>Depicted is the main application screen when starting the application with no*/}
+                            {/*    games imported*/}
+                            {/*</figcaption>*/}
+                        </figure>)}
+
 
                     </div>
                 </div>
@@ -128,14 +143,15 @@ function Layout({children, projectName, description, src}: Props) {
 export default function Project() {
 
     const router = useRouter()
-    const {name} = router.query
+    const {slug} = router.query
 
-    const project = PROJECTS.find(project => project.slug === name);
+    const project = PROJECTS.find(project => project.slug === slug);
 
     return (
         <Layout projectName={project?.name}
                 description={project?.description}
                 src={project?.image.src}
+                altImagesSrc={project?.altImages}
         >
 
         </Layout>
