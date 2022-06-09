@@ -12,7 +12,7 @@ export function DisplayImage({src}: Props) {
             }
         >
             <div
-                className={"absolute m-auto h-[500px] w-[1000px]"}
+                className={"relative m-auto h-[500px] w-[1000px]"}
             >
                 <Image
                     src={src}

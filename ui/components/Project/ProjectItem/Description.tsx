@@ -20,30 +20,25 @@ export function Description({project}: Props) {
                     {project.longName}
                 </div>
                 <div>{project.description}</div>
-                {/*{project.githubLink && project.githubLink !== "" && (*/}
-                {/*    <Link href={"https://github.com/druage"}>*/}
-                {/*        <a*/}
-                {/*            target={"_blank"}*/}
-                {/*            className="inline-flex items-center text-sm font-medium underline w-fit"*/}
-                {/*        >*/}
-                {/*            <FontAwesomeIcon*/}
-                {/*                icon={faGithub}*/}
-                {/*                height={16}*/}
-                {/*                width={16}*/}
-                {/*                className={"mr-1"}*/}
-                {/*            />*/}
-                {/*            View Code*/}
-                {/*        </a>*/}
-                {/*    </Link>*/}
-                {/*)}*/}
-
-                {project.slug && <Link href={`/project/${project.slug}`}>
-                    <a
-                        className="inline-flex items-center text-sm font-medium underline w-fit"
-                    >
-                        See More
-                    </a>
-                </Link>}
+                {project.githubLink && project.githubLink !== "" && (
+                    <Link href={project.githubLink}>
+                        <a
+                            target={"_blank"}
+                            className="inline-flex items-center text-sm font-medium underline w-fit"
+                            onClick={event => {
+                                event.stopPropagation();
+                            }}
+                        >
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                height={16}
+                                width={16}
+                                className={"mr-1"}
+                            />
+                            View Code
+                        </a>
+                    </Link>
+                )}
 
             </div>
         </div>
