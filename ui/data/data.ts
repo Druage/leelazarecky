@@ -3,6 +3,7 @@ import {Project} from "../types/Project";
 export const PROJECTS: Project[] = [
     {
         name: "Phoenix",
+        slug: "phoenix",
         longName: "A Multi-System Emulator",
         description:
             "Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on" +
@@ -17,6 +18,7 @@ export const PROJECTS: Project[] = [
     },
     {
         name: "RetroQuest",
+        slug: "retroquest",
         longName: "A Remote Retrospective Tool",
         description:
             "A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement.",
@@ -30,6 +32,7 @@ export const PROJECTS: Project[] = [
     },
     {
         name: "Smash ELO Tracker",
+        slug: "smash-elo-tracker",
         longName: "Super Smash Bros. Tourney Ranking",
         description:
             "Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day.",
@@ -43,6 +46,7 @@ export const PROJECTS: Project[] = [
     },
     {
         name: "AuthQuest",
+        slug: "authquest",
         longName: "An OAuth2 and OpenID Server",
         description:
             "An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows" +

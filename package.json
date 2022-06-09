@@ -13,8 +13,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
+    "@headlessui/react": "^1.6.4",
     "clsx": "^1.1.1",
+    "install": "^0.13.0",
     "next": "12.1.0",
+    "npm": "^8.12.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },

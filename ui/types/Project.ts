@@ -9,4 +9,5 @@ export type Project = {
     };
     tags: string[];
     githubLink: string;
+    slug: string;
 };
