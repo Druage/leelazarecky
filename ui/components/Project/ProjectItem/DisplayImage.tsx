@@ -20,6 +20,7 @@ export function DisplayImage({src}: Props) {
                     objectFit="contain"
                     className={"object-left-top"}
                     layout={"fill"}
+                    priority={true}
                 />
 
             </div>

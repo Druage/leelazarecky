@@ -21,6 +21,7 @@ export default function AboutSection() {
           objectFit="contain"
           height={460}
           width={400}
+          priority={true}
         />
 
         <div className={"w-full px-6 md:w-[500px] md:px-0"}>

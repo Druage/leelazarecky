@@ -108,6 +108,7 @@ function Layout({children, projectName, description, src}: Props) {
                                 width={1310}
                                 objectFit={"contain"}
                                 height={873}
+                                priority={true}
                             />
                             {/*<figcaption>Depicted is the main application screen when starting the application with no*/}
                             {/*    games imported*/}
