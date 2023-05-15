@@ -4,6 +4,7 @@ import OpenSourceProjectsSection from "../ui/sections/OpenSourceProjectsSection"
 import FooterSection from "../ui/sections/FooterSection";
 import SkillsSection from "../ui/sections/SkillsSection";
 import Head from "next/head";
+import OverviewSection from "../ui/sections/OverviewSection";
 
 const Home: NextPage = () => {
     return (
@@ -18,9 +19,12 @@ const Home: NextPage = () => {
             <AboutSection/>
 
             <main className={"w-full border-gray-100"}>
-                <SkillsSection/>
+                {/*<SkillsSection/>*/}
+
+                <OverviewSection/>
 
                 <OpenSourceProjectsSection/>
+
             </main>
 
             <FooterSection/>
