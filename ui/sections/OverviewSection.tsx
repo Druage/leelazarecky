@@ -13,9 +13,9 @@ function Skill(heading: string, subHeading: string | JSX.Element | JSX.Element[]
 export default function OverviewSection() {
 
     return (
-        <SectionLayout id={"open-source-projects"} heading={"Career"} mode={"light"}>
+        <SectionLayout id={"open-source-projects"} mode={"light"}>
 
-                <div className={"flex flex-col w-full justify-center items-center md:flex-row gap-24"}>
+                <div className={"flex flex-col w-full justify-center items-center md:flex-row gap-24 pt-20"}>
 
                     <div className={"flex flex-col items-center justify-center gap-16"}>
 

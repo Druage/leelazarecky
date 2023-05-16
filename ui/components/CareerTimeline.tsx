@@ -1,9 +1,10 @@
 import {Button} from "./Button";
 import Image from "next/image";
-import logoAirbnb from '../images/logos/airbnb.svg'
-import logoFacebook from '../images/logos/facebook.svg'
-import logoRedHat from '../images/logos/redhat.svg'
-import logoStarbucks from '../images/logos/starbucks.svg'
+import logoValeo from '../images/logos/valeo.png'
+import logoAirforce from '../images/logos/airforce.png'
+import logoRedHat from '../images/logos/redhat.png'
+import logoFordLabs from '../images/logos/fordlabs.png'
+import logoHighergrounds from '../images/logos/highgrounds.jpg'
 
 function MailIcon(props: any) {
     return (
@@ -80,28 +81,28 @@ export function CareerTimeline() {
         {
             company: 'FordLabs',
             title: 'Full-Stack Software Engineer',
-            logo: logoAirbnb,
+            logo: logoFordLabs,
             start: '2017',
             end: '2023',
         },
         {
             company: 'Higher Grounds, Non-Profit',
             title: 'Full-Stack Software Engineer',
-            logo: logoFacebook,
+            logo: logoHighergrounds,
             start: '2020',
             end: '2021',
         },
         {
             company: 'Valeo',
             title: 'Research and Hardware Engineer Co-Op',
-            logo: logoStarbucks,
+            logo: logoValeo,
             start: '2016',
             end: '2017',
         },
         {
             company: 'United State Air Force',
             title: 'Aircraft Armament Systems Journeyman',
-            logo: logoStarbucks,
+            logo: logoAirforce,
             start: '2009',
             end: '2016',
         },
@@ -116,9 +117,9 @@ export function CareerTimeline() {
             <ol className="mt-6 space-y-4">
                 {resume.map((role, roleIndex) => (
                     <li key={roleIndex} className="flex gap-4">
-                        {/*<div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:ring-0">*/}
-                        {/*    <Image src={role.logo} alt="" className={"h-7 w-7"} unoptimized />*/}
-                        {/*</div>*/}
+                        <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center">
+                            <Image src={role.logo} alt="" className={"h-7 w-7"} unoptimized />
+                        </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                             <dt className="sr-only">Company</dt>
                             <dd className="w-full flex-none text-sm font-medium text-zinc-900">

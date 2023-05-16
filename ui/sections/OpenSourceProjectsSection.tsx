@@ -86,7 +86,7 @@ const posts = [
 export default function OpenSourceProjectsSection() {
 
     return (
-        <SectionLayout id={"open-source-projects"} heading={"Passion Projects"} mode={"light"}>
+        <SectionLayout id={"open-source-projects"} heading={""} mode={"light"}>
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
