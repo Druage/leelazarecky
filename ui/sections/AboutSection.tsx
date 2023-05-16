@@ -16,7 +16,7 @@ export default function AboutSection() {
 
             <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24 py-16">
 
-                <div className={"relative rounded h-[420px] w-[420px] overflow-hidden"}>
+                <div className={"relative rounded md:h-[420px] md:w-[420px] w-[160px] h-[160px] overflow-hidden"}>
                     <Image
                         src={"/profile_image.jpg"}
                         alt="portfolio-profile-image"
