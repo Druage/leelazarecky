@@ -78,14 +78,18 @@ export default function OpenSourceProjectsSection() {
                             Some career related and open source projects
                         </p>
                         <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                            {projects.map((post) => (
-                                <article key={post.slug} className="relative isolate flex flex-col gap-8 lg:flex-row">
+                            {projects.map((project) => (
+                                <article key={project.slug}
+                                         className="relative isolate flex flex-col gap-8 lg:flex-row">
                                     <div
-                                        className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                                        className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0 cursor-pointer"
+                                        onClick={() => {
+                                            router.push(`/project/${project.slug}`).then()
+                                        }}>
                                         <Image
                                             layout={"fill"}
-                                            src={post.imageUrl}
-                                            alt=""
+                                            src={project.imageUrl}
+                                            alt={`${project.slug}-project-image`}
                                             className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
                                         />
                                         <div
@@ -93,33 +97,33 @@ export default function OpenSourceProjectsSection() {
                                     </div>
                                     <div>
                                         <div className="flex items-center gap-x-4 text-xs">
-                                            <time dateTime={post.datetime} className="text-gray-500">
-                                                {post.date}
+                                            <time dateTime={project.datetime} className="text-gray-500">
+                                                {project.date}
                                             </time>
                                             <a
-                                                href={post.category.href}
+                                                href={project.category.href}
                                                 className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                                             >
-                                                {post.category.title}
+                                                {project.category.title}
                                             </a>
                                         </div>
                                         <div className="group relative max-w-xl">
                                             <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                                <Link href={`/project/${post.slug}`}>
+                                                <Link href={`/project/${project.slug}`}>
                                                     <span className={"cursor-pointer"}>
-                                                        {post.title}
+                                                        {project.title}
                                                     </span>
 
                                                 </Link>
                                             </h3>
-                                            <p className="mt-5 text-sm leading-6 text-gray-600">{post.description}</p>
+                                            <p className="mt-5 text-sm leading-6 text-gray-600">{project.description}</p>
                                         </div>
                                         <div className="mt-6 flex border-t border-gray-900/5 pt-6">
                                             <div className="relative flex items-center gap-x-4">
                                                 <div className="text-sm leading-6">
                                                     <p className="font-semibold text-gray-900">
-                                                        {post.project.href &&
-                                                            <a href={post.project.href} target={"_blank"}
+                                                        {project.project.href &&
+                                                            <a href={project.project.href} target={"_blank"}
                                                                rel={"noreferrer"}>
                                                                 <span className="absolute inset-0"/>
                                                                 View the code
