@@ -82,7 +82,7 @@ export default function OpenSourceProjectsSection() {
                                 <article key={project.slug}
                                          className="relative isolate flex flex-col gap-8 lg:flex-row">
                                     <div
-                                        className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0 cursor-pointer"
+                                        className="relative aspect-square lg:w-64 w-56 lg:shrink-0 cursor-pointer"
                                         onClick={() => {
                                             router.push(`/project/${project.slug}`).then()
                                         }}>
