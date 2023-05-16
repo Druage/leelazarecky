@@ -10,11 +10,11 @@ export default function NavBar() {
             <Link href={"/"}>
                 <a className={"hover:text-blue-500 hover:underline"}>About</a>
             </Link>
-            <Link href={"#technical-skills"}>
-                <a className={"hover:text-blue-500 hover:underline"}>Technical Skills</a>
+            <Link href={"#experience"}>
+                <a className={"hover:text-blue-500 hover:underline"}>Experience</a>
             </Link>
-            <Link href={"#open-source-projects"}>
-                <a className={"hover:text-blue-500 hover:underline"}>Passion Projects</a>
+            <Link href={"#project-highlights"}>
+                <a className={"hover:text-blue-500 hover:underline"}>Project Highlights</a>
             </Link>
             <a download href={"/LeeLazarecky_Resume.pdf"} className={"hover:text-blue-500 hover:underline"}>Resume</a>
         </header>

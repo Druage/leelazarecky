@@ -68,7 +68,7 @@ export default function OpenSourceProjectsSection() {
     const router = useRouter();
 
     return (
-        <SectionLayout id={"open-source-projects"} heading={""} mode={"light"}>
+        <SectionLayout id={"project-highlights"} heading={""} mode={"light"}>
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">

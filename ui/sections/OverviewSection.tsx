@@ -13,7 +13,7 @@ function Skill(heading: string, subHeading: string | JSX.Element | JSX.Element[]
 export default function OverviewSection() {
 
     return (
-        <SectionLayout id={"open-source-projects"} mode={"light"}>
+        <SectionLayout id={"experience"} mode={"light"}>
 
                 <div className={"flex flex-col w-full justify-center items-center md:flex-row gap-24 pt-20"}>
 
