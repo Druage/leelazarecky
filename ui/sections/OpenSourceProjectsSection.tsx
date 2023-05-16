@@ -1,83 +1,68 @@
 import SectionLayout from "../layouts/SectionLayout";
-import ProjectGrid from "../components/Project/ProjectGrid";
+import imageRetroquest from "../../public/retroquest/retroquest.png"
+import imagePhoenix from "../../public/phoenix_256x256_v2.png"
+import imageEloTracker from "../../public/smash-bros/elo-tracker.png"
+import imageAuthquest from "../../public/authquest/authquest.png"
+
+import Image from "next/image";
 
 const posts = [
 
 
     {
         id: 1,
-        title: 'Boost your conversion rate',
+        title: 'Phoenix, A Multi-System Video Game Emulator',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+            'Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on emulated consoles on their computer.',
+        imageUrl: imagePhoenix,
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: {title: 'Marketing', href: '#'},
-        author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        category: {title: 'C++, Qt, QML, Emulation', href: 'http://phoenix.vg/'},
+        project: {
+            href: 'https://github.com/team-phoenix/Phoenix',
         },
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 2,
+        title: 'RetroQuest',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+            'A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement.',
+        imageUrl: imageRetroquest,
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: {title: 'Marketing', href: '#'},
-        author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        category: {title: 'Java, Spring Boot, Angular', href: 'https://github.com/fordlabs/retroquest'},
+        project: {
+            href: 'https://github.com/fordlabs/retroquest',
         },
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 3,
+        title: 'Smash ELO Tracker',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+            'Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day. This application helps keep track of custom rule-sets.',
+        imageUrl: imageEloTracker,
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: {title: 'Marketing', href: '#'},
-        author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        category: {title: 'Java, Spring Boot, React', href: '#'},
+        project: {
+            href: '',
         },
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 4,
+        title: 'AuthQuest',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+            'An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows the OAuth2 and OpenID specifications.',
+        imageUrl: imageAuthquest,
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: {title: 'Marketing', href: '#'},
-        author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        category: {title: 'Kotlin, Vue.js', href: '#'},
+        project: {
+            href: '',
         },
     },
     // More posts...
@@ -90,7 +75,8 @@ export default function OpenSourceProjectsSection() {
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Project
+                            Highlights</h2>
                         <p className="mt-2 text-lg leading-8 text-gray-600">
                             Learn how to grow your business with our expert advice.
                         </p>
@@ -99,7 +85,8 @@ export default function OpenSourceProjectsSection() {
                                 <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
                                     <div
                                         className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                                        <img
+                                        <Image
+                                            layout={"fill"}
                                             src={post.imageUrl}
                                             alt=""
                                             className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
@@ -114,6 +101,7 @@ export default function OpenSourceProjectsSection() {
                                             </time>
                                             <a
                                                 href={post.category.href}
+                                                target={"_blank"}
                                                 className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                                             >
                                                 {post.category.title}
@@ -130,16 +118,15 @@ export default function OpenSourceProjectsSection() {
                                         </div>
                                         <div className="mt-6 flex border-t border-gray-900/5 pt-6">
                                             <div className="relative flex items-center gap-x-4">
-                                                <img src={post.author.imageUrl} alt=""
-                                                     className="h-10 w-10 rounded-full bg-gray-50"/>
                                                 <div className="text-sm leading-6">
                                                     <p className="font-semibold text-gray-900">
-                                                        <a href={post.author.href}>
-                                                            <span className="absolute inset-0"/>
-                                                            {post.author.name}
-                                                        </a>
+                                                        {post.project.href &&
+                                                            <a href={post.project.href} target={"_blank"} rel={"noreferrer"}>
+                                                                <span className="absolute inset-0"/>
+                                                                View the code
+                                                            </a>}
+
                                                     </p>
-                                                    <p className="text-gray-600">{post.author.role}</p>
                                                 </div>
                                             </div>
                                         </div>
