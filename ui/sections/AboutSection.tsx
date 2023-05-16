@@ -14,9 +14,9 @@ export default function AboutSection() {
         <SectionLayout>
             <NavBar/>
 
-            <div className="flex flex-col items-center justify-center gap-12 align-middle md:flex-row md:gap-24 py-16">
+            <div className="flex flex-col items-start md:items-center justify-center gap-12 align-middle md:flex-row md:gap-24 py-16">
 
-                <div className={"relative rounded md:h-[420px] md:w-[420px] w-[160px] h-[160px] overflow-hidden"}>
+                <div className={"relative rounded md:h-[420px] md:w-[420px] w-[120px] h-[120px] overflow-hidden mx-4 md:mx-0"}>
                     <Image
                         src={"/profile_image.jpg"}
                         alt="portfolio-profile-image"
@@ -27,7 +27,7 @@ export default function AboutSection() {
                     />
                 </div>
 
-                <div className={"w-full px-6 md:w-[500px] md:px-0"}>
+                <div className={"w-full px-4 md:w-[500px] md:px-0"}>
                     <h1 className={"mb-4 block text-4xl font-extrabold"}>
                         Software developer, moonlight designer, and open source advocate.
                     </h1>
