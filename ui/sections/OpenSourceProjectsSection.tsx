@@ -5,14 +5,13 @@ import imageEloTracker from "../../public/smash-bros/elo-tracker.png"
 import imageAuthquest from "../../public/authquest/authquest.png"
 
 import Image from "next/image";
+import {useRouter} from "next/router";
+import Link from "next/link";
 
-const posts = [
-
-
+const projects = [
     {
-        id: 1,
         title: 'Phoenix, A Multi-System Video Game Emulator',
-        href: '#',
+        slug: "phoenix",
         description:
             'Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on emulated consoles on their computer.',
         imageUrl: imagePhoenix,
@@ -24,9 +23,8 @@ const posts = [
         },
     },
     {
-        id: 2,
         title: 'RetroQuest',
-        href: '#',
+        slug: "retroquest",
         description:
             'A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement.',
         imageUrl: imageRetroquest,
@@ -38,9 +36,8 @@ const posts = [
         },
     },
     {
-        id: 3,
         title: 'Smash ELO Tracker',
-        href: '#',
+        slug: "smash-elo-tracker",
         description:
             'Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day. This application helps keep track of custom rule-sets.',
         imageUrl: imageEloTracker,
@@ -52,9 +49,8 @@ const posts = [
         },
     },
     {
-        id: 4,
         title: 'AuthQuest',
-        href: '#',
+        slug: "authquest",
         description:
             'An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows the OAuth2 and OpenID specifications.',
         imageUrl: imageAuthquest,
@@ -69,6 +65,7 @@ const posts = [
 ]
 
 export default function OpenSourceProjectsSection() {
+    const router = useRouter();
 
     return (
         <SectionLayout id={"open-source-projects"} heading={""} mode={"light"}>
@@ -78,11 +75,11 @@ export default function OpenSourceProjectsSection() {
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Project
                             Highlights</h2>
                         <p className="mt-2 text-lg leading-8 text-gray-600">
-                            Learn how to grow your business with our expert advice.
+                            Some career related and open source projects
                         </p>
                         <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                            {posts.map((post) => (
-                                <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
+                            {projects.map((post) => (
+                                <article key={post.slug} className="relative isolate flex flex-col gap-8 lg:flex-row">
                                     <div
                                         className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
                                         <Image
@@ -101,7 +98,6 @@ export default function OpenSourceProjectsSection() {
                                             </time>
                                             <a
                                                 href={post.category.href}
-                                                target={"_blank"}
                                                 className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                                             >
                                                 {post.category.title}
@@ -109,10 +105,12 @@ export default function OpenSourceProjectsSection() {
                                         </div>
                                         <div className="group relative max-w-xl">
                                             <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                                <a href={post.href}>
-                                                    <span className="absolute inset-0"/>
-                                                    {post.title}
-                                                </a>
+                                                <Link href={`/project/${post.slug}`}>
+                                                    <span className={"cursor-pointer"}>
+                                                        {post.title}
+                                                    </span>
+
+                                                </Link>
                                             </h3>
                                             <p className="mt-5 text-sm leading-6 text-gray-600">{post.description}</p>
                                         </div>
@@ -121,7 +119,8 @@ export default function OpenSourceProjectsSection() {
                                                 <div className="text-sm leading-6">
                                                     <p className="font-semibold text-gray-900">
                                                         {post.project.href &&
-                                                            <a href={post.project.href} target={"_blank"} rel={"noreferrer"}>
+                                                            <a href={post.project.href} target={"_blank"}
+                                                               rel={"noreferrer"}>
                                                                 <span className="absolute inset-0"/>
                                                                 View the code
                                                             </a>}

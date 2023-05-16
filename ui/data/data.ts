@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
         slug: "phoenix",
         longName: "A Multi-System Emulator",
         description:
-            "Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on" +
+            "A Multi-System Emulation frontend that allows users to play all their favorite retro games on" +
             " emulated consoles on their computer.",
         image: {
             src: "/phoenix-v2.png",
