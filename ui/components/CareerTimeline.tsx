@@ -109,7 +109,7 @@ export function CareerTimeline() {
     ]
 
     return (
-        <div className="rounded-2xl border p-6 border-zinc-700/40 sm:mx-24 md:mx-0">
+        <div className="rounded-2xl border p-6 border-zinc-700/40 mx-4 md:mx-0">
             <h2 className="flex text-sm font-semibold text-zinc-700">
                 <BriefcaseIcon className="h-6 w-6 flex-none" />
                 <span className="ml-3">Work</span>
