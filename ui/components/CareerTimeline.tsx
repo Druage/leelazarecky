@@ -5,6 +5,7 @@ import logoAirforce from '../images/logos/airforce.png'
 import logoRedHat from '../images/logos/redhat.png'
 import logoFordLabs from '../images/logos/fordlabs.png'
 import logoHighergrounds from '../images/logos/highgrounds.jpg'
+import {ArrowDownIcon} from "./ArrowDownIcon";
 
 function MailIcon(props: any) {
     return (
@@ -51,20 +52,6 @@ function BriefcaseIcon(props: any) {
         </svg>
     )
 }
-
-function ArrowDownIcon(props: any) {
-    return (
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-            <path
-                d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-        </svg>
-    )
-}
-
 
 export function CareerTimeline() {
     let resume: any[] = [
