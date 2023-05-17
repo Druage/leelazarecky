@@ -19,7 +19,7 @@ export default function OverviewSection() {
 
                     <div className={"flex flex-col items-center justify-center gap-16"}>
 
-                        {Skill("5+ Years", "Full-Stack Experience")}
+                        {Skill(`${new Date().getFullYear() - 2017}+ Years`, "Full-Stack Experience")}
 
                         {Skill("4+ Years",
                             <>
