@@ -16,8 +16,6 @@ const projects = [
     description:
       "A commercial product that manages data about fleet vehicles and helps make that data actionable by the customer.",
     imageUrl: imageFCS,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
     category: {
       title: "Vue.js, Typescript, MySQL",
       href: "https://www.commercialsolutions.ford.com/",
@@ -29,8 +27,6 @@ const projects = [
     description:
       "Phoenix is a Multi-System Emulation frontend that allows users to play all their favorite retro games on emulated consoles on their computer.",
     imageUrl: imagePhoenix,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
     category: { title: "C++, Qt, QML, Emulation", href: "http://phoenix.vg/" },
     project: {
       href: "https://github.com/team-phoenix/Phoenix",
@@ -42,8 +38,6 @@ const projects = [
     description:
       "A real-time web application that allows users to facilitate weekly team retrospectives, discussing what went well during the week and what needs improvement.",
     imageUrl: imageRetroquest,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
     category: {
       title: "Java, Spring Boot, Angular",
       href: "https://github.com/fordlabs/retroquest",
@@ -58,8 +52,6 @@ const projects = [
     description:
       "Playing Smash Bros. Ultimate during a work break can be fun and a good way to de-stress from the work day. This application helps keep track of custom rule-sets.",
     imageUrl: imageEloTracker,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
     category: { title: "Java, Spring Boot, React", href: "#" },
     project: {
       href: "",
@@ -71,8 +63,6 @@ const projects = [
     description:
       "An authorization and authentication server for users to use as a replacement for paid services such as Auth0 or Okta that follows the OAuth2 and OpenID specifications.",
     imageUrl: imageAuthquest,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
     category: { title: "Kotlin, Vue.js", href: "#" },
     project: {
       href: "",
@@ -121,12 +111,6 @@ export default function OpenSourceProjectsSection() {
                   </div>
                   <div>
                     <div className="flex items-center gap-x-4 text-xs">
-                      <time
-                        dateTime={project.datetime}
-                        className="text-gray-500"
-                      >
-                        {project.date}
-                      </time>
                       <a
                         href={project.category.href}
                         className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
