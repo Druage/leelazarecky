@@ -83,7 +83,7 @@ export default function OpenSourceProjectsSection() {
               Project Highlights
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Some career related and open source projects
+              A few prominent projects that I am proud to have been apart of.
             </p>
             <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
               {projects.map((project) => (
