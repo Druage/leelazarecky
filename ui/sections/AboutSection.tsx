@@ -14,7 +14,7 @@ export default function AboutSection() {
     <SectionLayout>
       <NavBar />
 
-      <div className="flex flex-col items-start justify-center gap-12 py-16 align-middle md:flex-row md:items-center md:gap-24">
+      <div className="flex flex-col items-start justify-center gap-12 py-16 align-middle md:items-center md:gap-24 lg:flex-row">
         <div
           className={
             "relative mx-4 h-[120px] w-[120px] overflow-hidden rounded md:mx-0 md:h-[420px] md:w-[420px]"
