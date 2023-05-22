@@ -1,33 +1,33 @@
-import {Button} from "./Button";
+import { Button } from "./Button";
 import Image from "next/image";
-import logoValeo from '../images/logos/valeo.png'
-import logoAirforce from '../images/logos/airforce.png'
-import logoRedHat from '../images/logos/redhat.png'
-import logoFordLabs from '../images/logos/fordlabs.png'
-import logoHighergrounds from '../images/logos/highgrounds.jpg'
-import {ArrowDownIcon} from "./ArrowDownIcon";
+import logoValeo from "../images/logos/valeo.png";
+import logoAirforce from "../images/logos/airforce.png";
+import logoRedHat from "../images/logos/redhat.png";
+import logoFordLabs from "../images/logos/fordlabs.png";
+import logoHighergrounds from "../images/logos/highgrounds.jpg";
+import { ArrowDownIcon } from "./ArrowDownIcon";
 
 function MailIcon(props: any) {
-    return (
-        <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-            {...props}
-        >
-            <path
-                d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-            />
-            <path
-                d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-                className="stroke-zinc-400 dark:stroke-zinc-500"
-            />
-        </svg>
-    )
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+      />
+      <path
+        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
+        className="stroke-zinc-400 dark:stroke-zinc-500"
+      />
+    </svg>
+  );
 }
 
 function BriefcaseIcon(props: any) {
@@ -113,12 +113,12 @@ export function CareerTimeline() {
                                 {role.company}
                             </dd>
                             <dt className="sr-only">Role</dt>
-                            <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                            <dd className="text-xs text-zinc-500">
                                 {role.title}
                             </dd>
                             <dt className="sr-only">Date</dt>
                             <dd
-                                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                                className="ml-auto text-xs text-zinc-500"
                                 aria-label={`${role.start.label ?? role.start} until ${
                                     role.end.label ?? role.end
                                 }`}
