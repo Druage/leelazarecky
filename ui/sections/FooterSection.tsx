@@ -38,7 +38,7 @@ export default function FooterSection() {
         </Link>
       </div>
       <p className="mt-12 text-center text-base text-gray-400">
-        &copy; 2022 Lee Lazarecky. All rights reserved.
+        &copy; {new Date().getFullYear()} Lee Lazarecky. All rights reserved.
       </p>
     </footer>
   );
