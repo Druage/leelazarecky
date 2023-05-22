@@ -1,10 +1,10 @@
-import {Project} from "../../../types/Project";
-import {Description} from "./Description";
-import {DisplayImage} from "./DisplayImage";
-import {useRouter} from "next/router";
+import { Project } from "../../../types/Project";
+import { Description } from "./Description";
+import { DisplayImage } from "./DisplayImage";
+import { useRouter } from "next/router";
 
 interface Props {
-    project: Project;
+  project: Project;
 }
 
 export function ProjectItem({project}: Props) {
