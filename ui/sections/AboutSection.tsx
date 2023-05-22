@@ -21,7 +21,7 @@ export default function AboutSection() {
           }
         >
           <Image
-            src={"/profile_image_410.jpg"}
+            src={"/profile_image_410.png"}
             alt="portfolio-profile-image"
             objectFit="fill"
             layout={"fill"}
