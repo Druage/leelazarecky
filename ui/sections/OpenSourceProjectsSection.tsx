@@ -6,7 +6,7 @@ import imageAuthquest from "../../public/authquest/authquest.png";
 import imageFCS from "../../public/fcs_256.png";
 import imagePeoplemover from "../../public/peoplemover_256.png";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -103,7 +103,7 @@ export default function OpenSourceProjectsSection() {
             <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
               {projects.map((project) => (
                 <article
-                  key={project.slug}
+                  key={project.title}
                   className="relative isolate flex flex-col gap-8 lg:flex-row"
                 >
                   <div
@@ -141,7 +141,7 @@ export default function OpenSourceProjectsSection() {
                               ? `/project/${project.slug}`
                               : project.category.href
                           }
-                        >
+                          legacyBehavior>
                           <span className={"cursor-pointer"}>
                             {project.title}
                           </span>

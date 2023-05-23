@@ -3,10 +3,10 @@ import {CareerTimeline} from "../components/CareerTimeline";
 
 function Skill(heading: string, subHeading: string | JSX.Element | JSX.Element[]) {
     return (
-        <p className={"p-2 text-center"}>
+        <div className={"p-2 text-center"}>
             <h1 className={"font-extrabold mb-3 text-2xl"}>{heading}</h1>
             <span className={"text-lg font-normal"}>{subHeading}</span>
-        </p>
+        </div>
     )
 }
 

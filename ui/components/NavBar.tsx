@@ -9,14 +9,16 @@ export default function NavBar() {
                 "flex flex-col items-center justify-center gap-x-12 gap-y-3 py-12 font-medium md:flex-row"
             }
         >
-            <Link href={"/"}>
-                <a className={"hover:text-blue-500 hover:underline"}>About</a>
+            <Link href={"/"} className={"hover:text-blue-500 hover:underline"}>
+                About
             </Link>
-            <Link href={"#experience"}>
-                <a className={"hover:text-blue-500 hover:underline"}>Experience</a>
+            <Link href={"#experience"} className={"hover:text-blue-500 hover:underline"}>
+                Experience
             </Link>
-            <Link href={"#project-highlights"}>
-                <a className={"hover:text-blue-500 hover:underline"}>Project Highlights</a>
+            <Link
+                href={"#project-highlights"}
+                className={"hover:text-blue-500 hover:underline"}>
+                Project Highlights
             </Link>
             <Button href={"/LeeLazarecky_Resume.pdf"} variant="primary" className="group w-auto">
                 Download Resume

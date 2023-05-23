@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logoValeo from "../images/logos/valeo.png";
 import logoAirforce from "../images/logos/airforce.png";
 import logoRedHat from "../images/logos/redhat.png";
@@ -102,8 +102,8 @@ export function CareerTimeline() {
                 <span className="ml-3">Work</span>
             </h2>
             <ol className="mt-6 space-y-4">
-                {resume.map((role, roleIndex) => (
-                    <li key={roleIndex} className="flex gap-4">
+                {resume.map(role => (
+                    <li key={role.company} className="flex gap-4">
                         <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center">
                             <Image src={role.logo} alt="" className={"h-7 w-7"} unoptimized />
                         </div>

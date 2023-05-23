@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -36,52 +36,46 @@ export default function AboutSection() {
           </h1>
 
           <div className={"badgeContainer mt-4 flex justify-items-start gap-4"}>
-            <Link href={"https://github.com/druage"}>
-              <a
-                target={"_blank"}
-                className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800 hover:underline"
-                aria-label={"View Github Profile for Lee Lazarecky"}
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  height={16}
-                  width={16}
-                  className={"mr-1"}
-                />
-                Github
-              </a>
+            <Link
+              href={"https://github.com/druage"}
+              target={"_blank"}
+              className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800 hover:underline"
+              aria-label={"View Github Profile for Lee Lazarecky"}>
+
+              <FontAwesomeIcon
+                icon={faGithub}
+                height={16}
+                width={16}
+                className={"mr-1"}
+              />Github
             </Link>
 
-            <Link href={"https://www.linkedin.com/in/lee-lazarecky-2a588310b/"}>
-              <a
-                target={"_blank"}
-                className="inline-flex items-center rounded-full bg-blue-100 px-3 py-0.5 text-sm font-medium text-blue-800 hover:underline"
-                aria-label={"View LinkedIn Profile for Lee Lazarecky"}
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  height={16}
-                  width={16}
-                  className={"mr-1"}
-                />
-                LinkedIn
-              </a>
+            <Link
+              href={"https://www.linkedin.com/in/lee-lazarecky-2a588310b/"}
+              target={"_blank"}
+              className="inline-flex items-center rounded-full bg-blue-100 px-3 py-0.5 text-sm font-medium text-blue-800 hover:underline"
+              aria-label={"View LinkedIn Profile for Lee Lazarecky"}>
+
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                height={16}
+                width={16}
+                className={"mr-1"}
+              />LinkedIn
             </Link>
 
-            <Link href={"https://www.instagram.com/leelazarecky/?hl=en"}>
-              <a
-                target={"_blank"}
-                className="inline-flex items-center rounded-full bg-purple-100 px-3 py-0.5 text-sm font-medium text-purple-800 hover:underline"
-                aria-label={"View Instagram Profile for Lee Lazarecky"}
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  height={16}
-                  width={16}
-                  className={"mr-1"}
-                />
-                Instagram
-              </a>
+            <Link
+              href={"https://www.instagram.com/leelazarecky/?hl=en"}
+              target={"_blank"}
+              className="inline-flex items-center rounded-full bg-purple-100 px-3 py-0.5 text-sm font-medium text-purple-800 hover:underline"
+              aria-label={"View Instagram Profile for Lee Lazarecky"}>
+
+              <FontAwesomeIcon
+                icon={faInstagram}
+                height={16}
+                width={16}
+                className={"mr-1"}
+              />Instagram
             </Link>
           </div>
 
