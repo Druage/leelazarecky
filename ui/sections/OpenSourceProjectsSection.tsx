@@ -29,9 +29,12 @@ const projects = [
         "Focuses on the people, helping you create and fluidly maintain balanced teams well suited for the product at hand – because we understand that a great team sets the stage for incredible results.",
     imageUrl: imagePeoplemover,
     category: {
-      title: "React, Typescript, PostgreSQL",
+      title: "React, Typescript, Kotlin, Spring Boot, PostgreSQL",
       href: "https://www.peoplemover.ford.com/",
     },
+    project: {
+      href: "https://github.com/FordLabs/peoplemover"
+    }
   },
   {
     title: "Phoenix, A Multi-System Video Game Emulator",
