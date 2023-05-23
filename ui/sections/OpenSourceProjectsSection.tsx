@@ -4,6 +4,7 @@ import imagePhoenix from "../../public/phoenix_256x256_v2.png";
 import imageEloTracker from "../../public/smash-bros/elo-tracker.png";
 import imageAuthquest from "../../public/authquest/authquest.png";
 import imageFCS from "../../public/fcs_256.png";
+import imagePeoplemover from "../../public/peoplemover_256.png";
 
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -19,6 +20,17 @@ const projects = [
     category: {
       title: "Vue.js, Typescript, MySQL",
       href: "https://www.commercialsolutions.ford.com/",
+    },
+  },
+  {
+    title: "PEOPLEMOVER",
+    slug: "",
+    description:
+        "Focuses on the people, helping you create and fluidly maintain balanced teams well suited for the product at hand – because we understand that a great team sets the stage for incredible results.",
+    imageUrl: imagePeoplemover,
+    category: {
+      title: "React, Typescript, PostgreSQL",
+      href: "https://www.peoplemover.ford.com/",
     },
   },
   {
